@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propiedad | inmosalvatierra</title>
-
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="shortcut icon" href="../fabicon (2).ico" type="image/x.icon">
 
@@ -13,77 +13,24 @@
 <body>
 
     <header>
-        <section class="header_principal">
-            <div class="div_logo">
-                <a href="../index.html"> <img class = "logo" src="../Assets/img/logo.png" alt="Logo inmobiliaria" loading="lazy"></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a href="./index.html"> <img src="../Assets/img/logo.png" alt="Logo inmobiliaria"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="link_navegador_header nav-link" aria-current="page" href="../index.html">Home</a>
+                  <a class="link_navegador_header nav-link" href="Servicios.html">Servicios</a>
+                  <a class="link_navegador_header nav-link" href= "Sobre_Nos.html" >Sobre Nosotros</a>
+                  <a class="link_navegador_header nav-link active" href="#">Propiedades</a>
+                  <a class="link_navegador_header nav-link " href="Contacto.html">Contacto</a>
+                </div>
+              </div>
             </div>
-            
-           <div class="wps">
-            <a class="link_wps" href="https://api.whatsapp.com/send?phone=5493854930091" target="_blank"><i class="fab fa-whatsapp fa-2xl"></i></a>            
-           </div>
-    
-            <section class="seccion_header">
-                <div class="div_head">
-                    <div class="icon_telefono">
-                        <i class="fa-solid fa-phone fa-2xl"></i>
-                    </div>
-
-                    <div class="tel_ig">
-                        <div class="telefono">
-                            Telefono: 385 4930091
-                        </div>
-                        <div>
-                        @inmobiliaria_salvatierra
-                        </div>
-                    </div>
-                 
-                </div>  
-                    
-                <div class="div_head">
-                    <div class="div_ubicacion">
-                        <i class="fa-solid fa-location-pin fa-2xl"></i>
-                    </div>
-
-                    <div class="tel_ig">
-                        <div>
-                        Avenida Roca Ezquina Mitre
-                        </div>
-
-                        <div>
-                        Sgo Del Estero, Capital
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="div_head">
-                  <div class="div_horario">
-                    <i class="far fa-clock fa-2xl"></i>
-                  </div>
-
-                  <div class="tel_ig">
-                    <div>
-                        Lun a Vie: 9hs hasta 18hs
-                      </div>
-                      <div>
-                        Sabados de 9hs a 13hs
-                      </div> 
-                  </div>                  
-                    
-                </div>
-            </section>      
-          </section>  
-
-        <nav class="navegador">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Sobre_Nos.html">Sobre Nosotros</a></li>
-                <li><a href="#">Nuestros servicios</a></li>
-                <li><a href="./Propiedades.html">Propiedades</a></li>
-                <li><a href="./Contacto.html">Contactanos</a></li>   
-            </ul>
-                 
-        </nav>
+          </nav>
          
          
     </header>
@@ -221,5 +168,7 @@
         </section>
         
     </footer>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>

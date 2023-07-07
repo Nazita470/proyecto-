@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | inmosalvatierra</title>
+
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
+
     <link rel="shortcut icon" href="./fabicon (2).ico" type="image/x.icon">
 
     <script src="https://kit.fontawesome.com/fa3a0fd4c5.js" crossorigin="anonymous"></script>
@@ -12,99 +15,61 @@
 </head>
 <body>
     <header>
-      <section class="header_principal">
 
-        <div class="div_logo">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
             <a href="./index.html"> <img src="./Assets/img/logo.png" alt="Logo inmobiliaria"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="link_navegador_header nav-link active" aria-current="page" href="#">Home</a>
+              <a class="link_navegador_header nav-link" href="./Pages/Servicios.html">Servicios</a>
+              <a class="link_navegador_header nav-link" href= "Pages/Sobre_Nos.html" >Sobre Nosotros</a>
+              <a class="link_navegador_header nav-link" href="./Pages/Propiedades.html">Propiedades</a>
+              <a class="link_navegador_header nav-link" href="./Pages/Contacto.html">Contacto</a>
+            </div>
+          </div>
         </div>
-        
-           <div class="wps">
-              <a class="link_wps" href="https://api.whatsapp.com/send?phone=5493854930091" target="_blank"> <i class="fab fa-whatsapp-square fa-2xl" ></i> </a>            
-           </div> 
-           
-        <section class="seccion_header">
-            <div class="div_head">
-
-                <div class="icon_telefono">
-                    <i class="fa-solid fa-phone fa-2xl"></i>
-                </div>
-
-                <div class="tel_ig">
-                        <div class="telefono">
-                            Telefono: 385 4930091
-                        </div>
-
-                        <div>
-                            @inmobiliaria_salvatierra
-                        </div>
-                    </div>
-               
-                
-            </div>  
-                
-            <div class="div_head">
-
-                <div class="div_ubicacion">
-                    <i class="fa-solid fa-location-pin fa-2xl"></i>
-                </div>
-
-                <div class="tel_ig">
-                    <div>
-                        Avenida Roca Ezquina Mitre
-                    </div>
-                    <div>
-                        Sgo Del Estero, Capital
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="div_head">
-              <div class="div_horario">
-                <i class="far fa-clock fa-2xl"></i>
-              </div>
-
-              <div class="tel_ig">
-                  <div>
-                    Lun a Vie: 9hs hasta 18hs
-                  </div>
-                  <div>
-                    Sabados de 9hs a 13hs
-                  </div>                    
-              </div>               
-            </div>
-        </section>      
-      </section>  
+      </nav>
      
-        <nav class="navegador">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./Pages/Sobre_Nos.html">Sobre Nosotros</a></li>
-                <li><a href="./Pages/Servicios.html">Nuestros servicios</a></li>
-                <li><a href="./Pages/Propiedades.html">Propiedades</a></li>
-                <li><a href="./Pages/Contacto.html">Contactanos</a></li>   
-            </ul>               
-        </nav>
-
+       
        
     </header>
 
     <main class="main_index">
-       <div class="div_imagen">
-            <!--<img class="imagen" src="./Assets/img/Imagen.png" alt="Imagen de aniversario">-->
-            <section>
-                <label class="form-control">
-                    <input class="checkbox" type="checkbox" name="checkbox" />
-                    Checkbox
-                </label>
-
-                <select name="selector_propiedad" id="selector">
-                    <option value="Departamento" selected >Departamento</option>
-                    <option value="Casa">Casa</option>
-                </select>
+    <div class="div_imagen d-flex flex-column  justify-content-center align-items-center">
+            <section class="seccion_checkBox d-inline-block">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn-secondary" for="option1">Alquilar</label>
+    
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-secondary" for="option2">Comprar</label>
+    
+                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <label class="btn btn-secondary" for="option4">Alquilar/Comprar</label>
             </section>
-            
-       </div>
+           <div class="d-flex flex-row formulario_select d-inline-block">
+             <form class="row gy-2 gx-3 align-items-center">
+                <div class="col-auto">
+                  <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                  <select class="form-select" id="autoSizingSelect">
+                    <option selected>Departamento</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Terreno/Lote">Terreno/Lote</option>
+                    <option value="Finca">Finca</option>
+                  </select>
+                </div>             
+              </form>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                 
+           </div>
+
+        </div>
+      
+
        <h1 class="h1_prop">Propiedades</h1>
 
        <h2 class="h2_prop">En venta</h2>
@@ -324,5 +289,7 @@
         </section>
         
     </footer>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
