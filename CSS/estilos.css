@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@300&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+
+
+*{
+
+    padding: 0;
+    
+    margin: 0;
+    
+    box-sizing: border-box;
+    
+    }
+
+ /*css header*/   
+    
+header{
+    background: white; 
+}
+
+
+
+.header_principal{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    
+}
+
+.div_logo{ 
+    
+    display: inline-block;
+    align-self: center;
+}
+
+header a img{
+   
+    object-fit: cover;
+}
+
+.seccion_header{
+    display: flex;
+}
+
+.div_head{
+    display: inline-flex;
+    flex-direction: row;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tel_ig{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.navegador{
+    text-align: center;
+    background-color: rgb(172, 168, 168);
+    height: 40px;
+    border-bottom: 1px solid rgb(228, 180, 180);
+    border-top: 1px solid rgb(228, 180, 180);
+}
+.navegador ul{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    border-left: 1px solid rgb(228, 180, 180);
+}
+
+.navegador ul li{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    padding: 15px 0; 
+    border-right: 1px solid rgb(228, 180, 180);
+    padding: 10px 20px;  
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/*css INDEX*/
+
+/*img index*/
+
+.div_imagen{
+    height: 600px;
+    width: 100%;
+    background-image: url("../Assets/img/Imagen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    object-fit: cover;
+}
+
+.checkbox{
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+}
+
+.main_index{
+    background-color: white;
+}
+
+/*titulos propiedades index*/
+.h1_prop{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.h2_prop{
+    font-size: 2rem;
+    margin: 60px 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*las propiedades*/
+.seccion_prop{
+    width: 100%;
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.div_prop{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border: 1px dashed grey;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.propiedad1{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.seccion_prop_informacion{
+    display: flex;
+    flex-direction: row;
+}
+
+.parrafo_prop{
+    margin: 20px 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/*boton en propiedades*/
+.reservar{
+    display: inline-block;
+    border: 1px solid grey;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-self: end;
+    margin-right: 30px;
+    padding: 5px;
+   
+}
+/*mapa*/
+.seccion_mapa {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.titulo_mapa{
+    font-size: 3rem;
+}
+
+.div_mapa{
+   width: 80%;
+   height: 500px;
+   padding: 20px;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 30px;
+}
+
+
+.titulo_SobreNos{   
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+.seccionMain_SobreNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/*css EMPRESA*/
+.div_Empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.p_Empresa{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.seccion_empresaImg{
+    margin-top: 50px;
+   display: flex;
+   flex-direction: row;
+   width: 50%;
+   align-items: center;
+   justify-content: center;
+}
+.seccion_empresaImg_imagenes{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.p_EmpresaImg{
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* css CONTACTO*/
+
+.main_contacto{
+   margin: 50px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.h1_contacto{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+}
+
+.redes_sociales{/*Abarca todos los componentes de redes*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.seccion_redes{/*Abarca cada red en particular*/
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.link_redes_contacto{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.div_img_contacto{
+    margin-bottom: 60px;
+}
+
+
+.p_datos_img_contacto{
+     font-size: 2rem;
+     font-weight: bold;
+     text-align: center;
+}
+
+.p2_datos_img_contacto{
+    font-size: 20px;
+    font-weight: 300px;
+    text-align: center;
+}
+
+/*El formulario*/
+
+.h2_contacto{
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.formulario{
+    width: 70%;
+    margin-top: 20px;  
+    display: flex;
+    flex-direction: column;
+}
+
+.div_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input{
+    display: inline-block;
+    width: 48%;
+    height: 30px;
+    
+}
+
+.textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.boton_enviar{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/*css servicios */
+
+.main_servicios_container{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20%;
+}
+
+.titulo_servicios{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+
+.seccion_servicios{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.h2_servicios{
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.seccion_servicios_img{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.div_servicios_img{
+    display: inline-block;
+    width: 200px;
+   
+}
+.img_siempre_servicios{
+    width: 100%;
+}
+
+.div_uno_servicios{
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200px;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.div_parrafos_servicios{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/*css propiedad */
+.main_propiedad{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.seccion_main_propiedad{
+    text-align: center;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 200px auto 1fr;
+    grid-template-areas: 
+        "img img"
+        "datos nav_prop"
+        "carac nav_prop"
+        "mapa mapa";
+    row-gap: 20px;   
+    column-gap: 20px; 
+}
+
+
+/*imagenes de la propiedad*/
+.seccion_imagenes_propiedad{
+    grid-area: img;
+    display: flex;
+}
+
+.div_imagenes_propiedad{/*contiene la imagen grnade*/
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+
+.seccionImg_imagenes_propiedad{/*contiene los divs de las imganes chicas*/
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 50%;
+}
+
+.div_imagenesChicas_propiedad{/*div imagenes chicas*/
+    width: 100%;
+    height: 50%;
+}
+
+.imagen_propiedad{/*imagenes*/
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.fondo{
+    background-color: brown;
+}
+
+/*consulta de la propiedad*/
+.consulta_propiedad{
+   grid-area: nav_prop;
+}
+
+/*contenedor de la consulta*/
+.div_consulta_propiedad{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(243 238 238);
+    text-align: center;
+}
+
+/*titulo formulario*/
+.h3_consulta_propiedad_formulario{
+    margin: 10% 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+/*Email*/
+.input_email_formulario_consulta_propiedad{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: start;
+    padding-left: 5%;
+}
+
+/*contiene input  nombre y telefono*/
+.numeroTelefono_formulario_consulta_propiedad{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.input_numeroTelefono_formulario_consulta_propiedad{
+    width: 45%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: start;
+    padding-left: 5%;
+}
+
+/*mensaje*/
+.textArea_formulario_consulta_propiedad{
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*Enviar*/
+.botonEnviar_formulario_consulta_propiedad{
+    width: 80%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: rgb(235 24 8);
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+/*DATOS de la propiedad*/
+.datos_propiedad{
+    grid-area: datos;
+    display: inline-flex;
+    border-radius: 10px;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: start;
+}
+
+.divCompartir_datos_propiedad{
+    align-self: end;
+    margin-top: 20px;
+    margin-right: 50px;
+    position: absolute;
+}
+
+/*Abarca los titulos*/
+.divTitulo_datos_propiedad{
+    margin: 20px;
+}
+
+/*Titulo*/
+.divTitulo_h1_datos_propiedad{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/*Subtitulo*/
+.divTitulo_h2_datos_propiedad{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/*metros, cant de habitaciones, baños*/
+.divInfo_datos_propiedad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.p_divInfo_datos_propiedad{
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+
+/*caracteristicas*/
+.caracteristicas_propiedad{
+    grid-area: carac;
+    text-align: start;
+}
+
+.h2_caracteristicas_propiedad{
+    margin-bottom: 30px;
+}
+
+.p_h2_caracteristicas_propiedad{
+    margin-bottom: 30px;
+}
+
+/*mapa*/
+.seccion_mapa_propiedad{
+    grid-area: mapa;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+
+/*Titulo mapa*/
+.h2_seccion_mapa_propiedad{
+    font-size: 30px;
+    align-self: start;
+    margin: 30px 0
+}
+
+.mapa_propiedad{
+    width: 100%;
+    border-radius: 10px; 
+}
+
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    background: rgb(172, 168, 168);
+    justify-content: space-between;
+}
+.datos_footer{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-left: 10%;
+}
+
+.h3_Footer{
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+/*mapa guia*/
+.navegador_footer ul{
+    list-style: none;
+}
+
+.navegador_footer ul li{
+    text-decoration: none;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.navegador_footer ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: black;
+} 
+
+.contacto_footer{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/*contacto del footer*/
+.h4_contacto_footer{
+    font-weight: 500;
+}
+
+.espaciado{
+    margin: 20px 0;
+}
+
+.redes_contacto_footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*imagenes footer*/
+
+.seccion_imgFooter{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+.div_imagenFooter{
+    display: inline-block;
+}
+
+
+/*whatsapp*/
+.wps{
+    display: inline-block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: #3dd13d;
+    z-index: 10;
+    
+}
+
+.link_wps{
+    text-decoration: none;
+    color: #058b05;
+}
+
+.link_sin_decoracion{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 1500px){
+  .header_principal{
+    padding-left: initial;
+  }
+
+  .datos_footer{
+    margin-left: initial;
+  }
+
+  .seccion_imgFooter{
+    margin-right: initial;
+  }
+
+  .div_mapa{
+    width: 1150px;
+  }
+
+  .div_head{
+    margin-left: 50px;
+  }
+
+  .div_Empresa{
+    width: 70%;
+  }
+
+  .seccion_empresaImg{
+    width: 70%;
+  }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px){
+
+    .div_head{
+        margin-left: 15px;
+      }
+
+    .tel_ig{
+        font-size: 13px;
+    }
+    .div_mapa{
+        width: 1000px;
+        height: 500px;
+    }
+
+   
+
+    .seccion_empresaImg_imagenes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccion_main_propiedad{
+        width: 90%;
+    }
+
+    .numeroTelefono_formulario_consulta_propiedad{
+        flex-direction: column;
+    }
+
+    .input_numeroTelefono_formulario_consulta_propiedad{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px){
+    .div_head{
+        margin-left: 15px;
+      }
+
+    .tel_ig{
+        font-size: 10px;
+    }
+
+    .div_mapa{
+        width: 800px;
+        height: 400px;
+    }
+
+    .seccion_servicios_img{
+        flex-direction: column;
+    }
+
+    .div_servicios_img{
+        margin-top: 30px;
+        order: 2;
+    }
+
+}   
+
+@media only screen and (min-width: 0px) and (max-width: 900px){
+    .header_principal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion_header{
+        display: none;
+    }
+
+    .tel_ig{
+        font-size: 10px;
+    }
+
+    .navegador{
+        height: initial;
+    }
+
+    .navegador ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_index{
+        padding: 10px;
+    }
+
+    .titulo_mapa{
+        font-size: 2rem;
+    }
+
+    .div_mapa{
+        width: 700px;
+        height: 400px;
+    }
+
+    .contacto_footer{
+        margin-right: 5%;
+    }
+
+    .seccion_imgFooter{
+      display: none;
+    }
+
+    .datos_footer{
+        margin-left: 20px;
+    }
+
+    .redes_sociales{
+        flex-direction: column;
+    }
+   
+    .seccion_redes{
+        margin: initial;
+        margin-top: 100px;
+    }
+
+    .div_contacto{
+        flex-direction: column;
+    }
+
+    .input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main_servicios_container{
+        padding: 20px;
+    }
+
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 700px){
+     .div_mapa{
+        width: 500px;
+        height: 300px;
+     }
+
+     .div_Empresa{
+        width: 80%;
+      }
+    
+      .seccion_empresaImg{
+        width: 80%;
+      }
+
+      .seccion_main_propiedad{
+        grid-template-columns: 100%;
+        grid-template-rows:  1fr 200px auto 1fr 500px;
+        grid-template-areas: 
+        "img "
+        "datos"
+        "carac"
+        "mapa"
+        "nav_prop";
+      }
+
+    .consulta_propiedad{
+        text-align: initial;
+        width: 100%;
+        height: 300px;
+     }
+
+     .h3_consulta_propiedad_formulario{
+        margin: 20px;
+        text-align: start;
+     }
+
+     .input_email_formulario_consulta_propiedad{
+        height: 30px;
+        padding-left: 10px;
+        margin: initial;
+     }
+    
+    .numeroTelefono_formulario_consulta_propiedad{
+        flex-direction: column;
+        
+    }
+
+    .input_numeroTelefono_formulario_consulta_propiedad{
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+       
+    }
+   }
+
