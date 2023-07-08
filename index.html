@@ -39,35 +39,44 @@
     </header>
 
     <main class="main_index">
-    <div class="div_imagen d-flex flex-column  justify-content-center align-items-center">
-            <section class="seccion_checkBox d-inline-block">
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                <label class="btn btn-secondary" for="option1">Alquilar</label>
+    <div class="div_imagen d-inline-flex flex-column justify-content-center align-items-center">
+        <section class="d-flex flex-column align-items-start container-lg">
+            <section class="seccion_checkBox ">
+                <input type="radio" class=" btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn-secondary boton_check" for="option1">Alquilar</label>
     
                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn-secondary" for="option2">Comprar</label>
+                <label class="btn btn-secondary boton_check" for="option2">Comprar</label>
     
                 <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                <label class="btn btn-secondary" for="option4">Alquilar/Comprar</label>
+                <label class="btn btn-secondary boton_check" for="option4">Alquilar/Comprar</label>
             </section>
-           <div class="d-flex flex-row formulario_select d-inline-block">
-             <form class="row gy-2 gx-3 align-items-center">
-                <div class="col-auto">
-                  <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                  <select class="form-select" id="autoSizingSelect">
-                    <option selected>Departamento</option>
-                    <option value="Casa">Casa</option>
-                    <option value="Terreno/Lote">Terreno/Lote</option>
-                    <option value="Finca">Finca</option>
-                  </select>
-                </div>             
-              </form>
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                 
-           </div>
 
-        </div>
+            <section class="d-flex flex-row  col-12">
+
+                    <form class="row gy-2 gx-3 align-items-center form_select_index heightTotal">
+                        <div class="div_select_index heightTotal">
+                         <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                         <select class="form-select heightTotal" id="autoSizingSelect">
+                           <option selected>Departamento</option>
+                           <option value="Casa">Casa</option>
+                           <option value="Terreno/Lote">Terreno/Lote</option>
+                           <option value="Finca">Finca</option>
+                         </select>
+                       </div>             
+                     </form>
+                     <div class="d-flex col-9">
+                        <input class="form-control me-2 heightTotal" type="search" placeholder="pileta,zona,garage,etc" aria-label="Search">
+                        <button class="boton_buscar heightTotal" type="submit">Buscar</button>
+                     </div>
+                        
+                      
+             </section>
+        </section>
+           
+           
+
+     </div>
       
 
        <h1 class="h1_prop">Propiedades</h1>
