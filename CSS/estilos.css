@@ -15,6 +15,14 @@
     
     }
 
+.margin_left_20{
+    margin-left: 20px;
+}
+
+.margin-20 {
+    margin: 10px;
+}
+
 .heightTotal{
     height: 100%;
 }
@@ -33,6 +41,10 @@
 /*css INDEX*/
 
 /*img index*/
+
+.main_index{
+    background-color: white;
+}
 
 .div_imagen{
     height: 600px;
@@ -110,30 +122,18 @@
     
   }
 
-  @media (min-width: 576px) {
-
-  }
-    
-  
 
 
-
-.main_index{
-    background-color: white;
-}
 
 /*titulos propiedades index*/
 .h1_prop{
-    font-size: 3rem;
-    text-align: center;
     margin-top: 30px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .h2_prop{
-    font-size: 2rem;
-    margin: 60px 40px;
     font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px 30px;
 }
 
 /*las propiedades*/
@@ -142,7 +142,8 @@
     margin: 30px 0px;
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
 }
 
 .div_prop{
@@ -154,6 +155,7 @@
     margin-bottom: 20px;
     margin-left: 60px;
     margin-right: 20px;
+    padding-bottom: 5px;
 }
 
 .propiedad1{
@@ -179,11 +181,13 @@
     border: 1px solid grey;
     text-decoration: none;
     font-size: 20px;
-    color: black;
+    color: white;
     font-family: 'Roboto Condensed', sans-serif;
     align-self: end;
     margin-right: 30px;
     padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(183, 178, 178);
    
 }
 /*mapa*/
@@ -207,10 +211,35 @@
 
 .mapa {
     width: 100%;
-    height: 100%;
-    background: transparent;
+    height: 500px;
     border-radius: 30px;
 }
+
+
+  /*seccion que contiene las cards en el index*/
+  .seccion_info_index{
+    margin-top: 20px ;
+    margin-bottom: 50px;
+  }
+    
+  .contenedor_info_index{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(221, 221, 221, 0.905)
+  }
+
+  .contenedor_info_index:hover{
+    border: 2px solid black;
+    background-color: rgb(180, 179, 179);
+  }
+
+  .cuadro_deConsulta_index{
+    border: 2px solid rgba(128, 128, 128, 0.233);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+  }
 
 
 .titulo_SobreNos{   
@@ -363,43 +392,28 @@
 /*css servicios */
 
 .main_servicios_container{
-    display: flex;
-    flex-direction: column;
-    padding: 5% 20%;
+    padding: 5% 10%;
 }
 
 .titulo_servicios{
     font-size: 50px;
-    font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;
 }
 
 
-.seccion_servicios{
-    width: 100%;
-    text-align: center;
+.seccion_servicios{ 
     margin-bottom: 100px;
 }
 
 
 .h2_servicios{
     font-size: 25px;
-    font-weight: 200;
     font-family: 'Montserrat', sans-serif;
-}
-
-.seccion_servicios_img{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
 }
 
 .div_servicios_img{
     display: inline-block;
     width: 200px;
-   
 }
 .img_siempre_servicios{
     width: 100%;
@@ -633,20 +647,16 @@
 
 
 /*FOOTER*/
+
 footer{
-    display: flex;
-    position: relative;
-    bottom: 0px;
     background: rgb(172, 168, 168);
     justify-content: space-between;
 }
-.datos_footer{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+/*.datos_footer{
     margin: 10px;
     margin-left: 10%;
-}
+}*/
 
 .h3_Footer{
     font-size: 2rem;
@@ -732,9 +742,7 @@ footer{
 
 
 @media only screen and (min-width: 0px) and (max-width: 1500px){
-  .header_principal{
-    padding-left: initial;
-  }
+
 
   .datos_footer{
     margin-left: initial;
@@ -742,14 +750,6 @@ footer{
 
   .seccion_imgFooter{
     margin-right: initial;
-  }
-
-  .div_mapa{
-    width: 1150px;
-  }
-
-  .div_head{
-    margin-left: 50px;
   }
 
   .div_Empresa{
@@ -763,20 +763,6 @@ footer{
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1200px){
-
-    .div_head{
-        margin-left: 15px;
-      }
-
-    .tel_ig{
-        font-size: 13px;
-    }
-    .div_mapa{
-        width: 1000px;
-        height: 500px;
-    }
-
-   
 
     .seccion_empresaImg_imagenes{
         flex-direction: column;
@@ -800,19 +786,6 @@ footer{
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1000px){
-    .div_head{
-        margin-left: 15px;
-      }
-
-    .tel_ig{
-        font-size: 10px;
-    }
-
-    .div_mapa{
-        width: 800px;
-        height: 400px;
-    }
-
     .seccion_servicios_img{
         flex-direction: column;
     }
@@ -822,45 +795,47 @@ footer{
         order: 2;
     }
 
+    
+
+
 }   
 
 @media only screen and (min-width: 0px) and (max-width: 900px){
-    .header_principal{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    /*Parte del main del index*/
+    .seccion_selectBuscador_index{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        
     }
 
-    .seccion_header{
-        display: none;
+    .form_select_index{
+        margin-bottom: 30px;
     }
 
-    .tel_ig{
-        font-size: 10px;
-    }
-
-    .navegador{
-        height: initial;
-    }
-
-    .navegador ul{
+    .seccion_checkBox{
         display: flex;
-        flex-direction: column;
+        width: 60%;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-self: center !important;
     }
 
-    .main_index{
-        padding: 10px;
+    .seccion_checkBox{
+        margin-bottom: 20px;
     }
 
-    .titulo_mapa{
-        font-size: 2rem;
+    .seccion_consultas_index{
+        flex-direction: column  !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
-    .div_mapa{
-        width: 700px;
-        height: 400px;
+    .seccion_info_index, .contenedor_redes_index, .contenedor_info_index{
+        width: 100%;
     }
 
+    /*cambios footer*/
     .contacto_footer{
         margin-right: 5%;
     }
@@ -873,59 +848,9 @@ footer{
         margin-left: 20px;
     }
 
-    .redes_sociales{
-        flex-direction: column;
-    }
-   
-    .seccion_redes{
-        margin: initial;
-        margin-top: 100px;
-    }
-
-    .div_contacto{
-        flex-direction: column;
-    }
-
-    .input{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .main_servicios_container{
-        padding: 20px;
-    }
-
-   }
-
-   @media only screen and (min-width: 0px) and (max-width: 700px){
-     .div_mapa{
-        width: 500px;
-        height: 300px;
-     }
-
-     .div_Empresa{
-        width: 80%;
-      }
-    
-      .seccion_empresaImg{
-        width: 80%;
-      }
-
-      .seccion_main_propiedad{
-        grid-template-columns: 100%;
-        grid-template-rows:  1fr 200px auto 1fr 500px;
-        grid-template-areas: 
-        "img "
-        "datos"
-        "carac"
-        "mapa"
-        "nav_prop";
-      }
-
     .consulta_propiedad{
         text-align: initial;
         width: 100%;
-        height: 300px;
      }
 
      .h3_consulta_propiedad_formulario{
@@ -950,5 +875,51 @@ footer{
         padding-left: 10px;
        
     }
+
+
+    /*cambios contacto*/
+    .redes_sociales{
+        flex-direction: column;
+    }
+   
+    .seccion_redes{
+        margin: initial;
+        margin-top: 100px;
+    }
+
+    .div_contacto{
+        flex-direction: column;
+    }
+
+    .input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+  
+    
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 700px){
+     .div_Empresa{
+        width: 80%;
+      }
+    
+      .seccion_empresaImg{
+        width: 80%;
+      }
+
+      .seccion_main_propiedad{
+        grid-template-columns: 100%;
+        grid-template-rows:  1fr 200px auto 1fr 500px;
+        grid-template-areas: 
+        "img "
+        "datos"
+        "carac"
+        "mapa"
+        "nav_prop";
+      }
+
+   
    }
 
