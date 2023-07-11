@@ -27,6 +27,8 @@
     height: 100%;
 }
 
+
+
  /*css header*/  
     
 .navbar-light .navbar-nav .link_navegador_header{
@@ -61,12 +63,6 @@
     height: 100%;
     background: transparent;
     object-fit: cover;
-}
-
-/*check box*/
-
-.seccion_checkBox{
-    margin-bottom: 30px;
 }
 
 .boton_check{
@@ -118,9 +114,14 @@
     background-color: rgb(212, 204, 204);
     color: black;
     padding: 10px;
-   border-radius: 10px;
-    
+    border-radius: 10px; 
+    border: 1px solid black;
   }
+
+  .boton_buscar:hover{
+    border: 2px solid black;
+  }
+
 
 
 
@@ -137,6 +138,7 @@
 }
 
 /*las propiedades*/
+
 .seccion_prop{
     width: 100%;
     margin: 30px 0px;
@@ -248,19 +250,9 @@
     font-family: 'Ubuntu', sans-serif;
    
 }
-.seccionMain_SobreNos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
-}
 
 /*css EMPRESA*/
 .div_Empresa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 50%;
 }
 
@@ -272,17 +264,9 @@
 }
 
 .seccion_empresaImg{
-    margin-top: 50px;
-   display: flex;
-   flex-direction: row;
-   width: 50%;
-   align-items: center;
-   justify-content: center;
+   width: 50%;  
 }
-.seccion_empresaImg_imagenes{
-    display: inline-flex;
-    flex-direction: row;
-}
+
 
 .p_EmpresaImg{
     margin-left: 10px;
@@ -292,43 +276,11 @@
 
 /* css CONTACTO*/
 
-.main_contacto{
-   margin: 50px 0px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
 .h1_contacto{
-    text-align: center;
     font-size: 30px;
-    font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 50px;
 }
-
-.redes_sociales{/*Abarca todos los componentes de redes*/
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.seccion_redes{/*Abarca cada red en particular*/
-    display: inline-block;
-    margin-left: 70px;
-}
-
-.link_redes_contacto{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 .div_img_contacto{
     margin-bottom: 60px;
@@ -337,14 +289,11 @@
 
 .p_datos_img_contacto{
      font-size: 2rem;
-     font-weight: bold;
-     text-align: center;
+     
 }
 
 .p2_datos_img_contacto{
     font-size: 20px;
-    font-weight: 300px;
-    text-align: center;
 }
 
 /*El formulario*/
@@ -355,38 +304,23 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.formulario{
-    width: 70%;
-    margin-top: 20px;  
-    display: flex;
-    flex-direction: column;
-}
-
-.div_contacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
 .input{
-    display: inline-block;
-    width: 48%;
     height: 30px;
-    
 }
 
 .textarea{
-    width: 100%;
     height: 200px;
 }
 
 .boton_enviar{
-    margin-top: 20px;
-    width: 100%;
     height: 30px;
     border: 1px solid black;
     border-radius: 20px;
+}
+
+.boton_enviar:hover{
+    background-color: rgb(237, 39, 39);
+    color: white;
 }
 
 /*css servicios */
@@ -647,75 +581,26 @@
 
 
 /*FOOTER*/
-
 footer{
-    background: rgb(172, 168, 168);
-    justify-content: space-between;
+    background-color: #b9b7b7;
 }
-
-/*.datos_footer{
-    margin: 10px;
-    margin-left: 10%;
-}*/
 
 .h3_Footer{
     font-size: 2rem;
     font-family: 'Quicksand', sans-serif;
-    font-weight: bolder;
-}
-
-/*mapa guia*/
-.navegador_footer ul{
-    list-style: none;
-}
-
-.navegador_footer ul li{
-    text-decoration: none;
-    margin: 20px;
-    text-decoration: none;
-}
-
-.navegador_footer ul li a{
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    color: black;
-} 
-
-.contacto_footer{
-    display: inline-flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-/*contacto del footer*/
-.h4_contacto_footer{
-    font-weight: 500;
 }
 
 .espaciado{
     margin: 20px 0;
 }
 
-.redes_contacto_footer{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 /*imagenes footer*/
 
 .seccion_imgFooter{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
     margin-right: 10%;
-    justify-content: space-between;
 }
 
-.div_imagenFooter{
-    display: inline-block;
-}
+
 
 
 /*whatsapp*/
@@ -743,16 +628,7 @@ footer{
 
 @media only screen and (min-width: 0px) and (max-width: 1500px){
 
-
-  .datos_footer{
-    margin-left: initial;
-  }
-
-  .seccion_imgFooter{
-    margin-right: initial;
-  }
-
-  .div_Empresa{
+    .div_Empresa{
     width: 70%;
   }
 
@@ -801,6 +677,15 @@ footer{
 }   
 
 @media only screen and (min-width: 0px) and (max-width: 900px){
+
+    .seccion_checkBox{
+        width: 100%;   
+    }
+
+    .boton_check{
+        width: 50%;
+    }
+
     /*Parte del main del index*/
     .seccion_selectBuscador_index{
         flex-direction: column !important;
@@ -813,17 +698,7 @@ footer{
         margin-bottom: 30px;
     }
 
-    .seccion_checkBox{
-        display: flex;
-        width: 60%;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-self: center !important;
-    }
-
-    .seccion_checkBox{
-        margin-bottom: 20px;
-    }
+   
 
     .seccion_consultas_index{
         flex-direction: column  !important;
@@ -835,17 +710,9 @@ footer{
         width: 100%;
     }
 
-    /*cambios footer*/
-    .contacto_footer{
-        margin-right: 5%;
-    }
 
     .seccion_imgFooter{
-      display: none;
-    }
-
-    .datos_footer{
-        margin-left: 20px;
+      display: none !important;
     }
 
     .consulta_propiedad{
@@ -875,28 +742,6 @@ footer{
         padding-left: 10px;
        
     }
-
-
-    /*cambios contacto*/
-    .redes_sociales{
-        flex-direction: column;
-    }
-   
-    .seccion_redes{
-        margin: initial;
-        margin-top: 100px;
-    }
-
-    .div_contacto{
-        flex-direction: column;
-    }
-
-    .input{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-  
     
    }
 
@@ -918,6 +763,13 @@ footer{
         "carac"
         "mapa"
         "nav_prop";
+      }
+
+      @include media-breakpoint-down(sm){
+
+        .redes_sociales{
+            flex-direction: column;
+        }
       }
 
    
