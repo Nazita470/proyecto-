@@ -35,58 +35,60 @@
         </div>
 
       </nav>
-     </header>
+    </header>
 
-    <main class="main_index">
+    <main>
 
-        <div class="div_imagen d-inline-flex flex-column justify-content-center align-items-center">
+        <div class="div_imagen d-inline-flex flex-column justify-content-center align-items-center container-fluid">
 
-   
+           <section class="d-flex flex-column  align-items-md-start align-items-center container-lg ">
 
-         <section class="d-flex flex-column  align-items-start container-lg seccion_check_index">
-            <section class="seccion_checkBox mb-3 d-flex flex-md-row flex-column justify-content-md-start justify-content-center align-items-md-start align-items-center">
-                <input type="radio" class=" btn-check" name="options" id="option1" autocomplete="off" checked>
-                <label class="btn btn-secondary boton_check" for="option1">Alquilar</label>
+                <section class=" mb-3 d-flex flex-md-row flex-column justify-content-md-start justify-content-center ">
+
+                    <input type="radio" class=" btn-check" name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn btn-secondary boton_check" for="option1">Alquilar</label>
     
-                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn-secondary boton_check" for="option2">Comprar</label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-secondary boton_check" for="option2">Comprar</label>
     
-                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                <label class="btn btn-secondary boton_check" for="option4">Alquilar/Comprar</label>
-            </section>
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn btn-secondary boton_check" for="option4">Alquilar/Comprar</label>
+
+                </section>
          
 
-            <section class="d-flex flex-row  col-12 seccion_selectBuscador_index">
+                 <section class="d-flex flex-md-column flex-row  col-12 mb-3 mt-3">
 
-                    <form class="row gy-2 gx-3 align-items-center form_select_index heightTotal">
-                        <div class="div_select_index heightTotal">
-                         <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                         <select class="form-select heightTotal" id="autoSizingSelect">
-                           <option selected>Departamento</option>
-                           <option value="Casa">Casa</option>
-                           <option value="Terreno/Lote">Terreno/Lote</option>
-                           <option value="Finca">Finca</option>
-                         </select>
-                       </div>             
-                     </form>
+                    <div class="row container-fluid justify-content-md-start justify-content-center ">
 
-                     <div class="d-flex col-10">
-                        <input class="form-control me-2 heightTotal" type="search" placeholder="Ej:pileta,zona,garage,etc" aria-label="Search">
-                        <button class="boton_buscar heightTotal" type="submit">Buscar</button>
-                     </div>
-                        
-                      
-             </section>
-         </section>
+                        <form class="row  gy-2 gx-3 col-md-auto col-7 mb-md-0 mb-3 mt-0 h-md-100">
+                            <div class="mt-0">
+                             <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                             <select class="form-select h-100" id="autoSizingSelect">
+                               <option selected>Departamento</option>
+                               <option value="Casa">Casa</option>
+                               <option value="Terreno/Lote">Terreno/Lote</option>
+                               <option value="Finca">Finca</option>
+                             </select>
+                            </div>             
+                         </form>
     
+                         <div class="d-flex col-md-9 ">
+                            <input class="form-control me-2" type="search" placeholder="Ej:pileta,zona,garage,etc" aria-label="Search">
+                            <button class="boton_buscar text-dark p-2 rounded-2 " type="submit">Buscar</button>
+                         </div>
 
-         </div> 
+                    </div> 
+
+                 </section>
+             </section>
+        </div> 
       
         
 
-        <h1 class="h1_prop fs-1 text-center">Propiedades</h1>
+        <h1 class="h1_prop mt-5 text-center">Propiedades</h1>
 
-        <h2 class="h2_prop fs-2">En venta</h2>
+        <h2 class="h2_prop ms-5">En venta</h2>
 
         <section class="d-flex flex-wrap align-items-center justify-content-evenly mt-3 mb-3">
            <div class="div_prop d-flex flex-column border border-1 border-dark rounded-2 p-3">
@@ -168,7 +170,7 @@
 
         </section>
           
-        <h2 class="h2_prop">En alquiler</h2>
+        <h2 class="h2_prop ms-5">En alquiler</h2>
         <section class="d-flex flex-wrap align-items-center justify-content-evenly mt-3 mb-3">
 
             <div class="div_prop d-flex flex-column border border-1 border-dark rounded-2 p-3">
@@ -249,25 +251,25 @@
 
         </section>
 
-        <section class="seccion_mapa d-flex flex-column align-items-center justify-content-center p-4 mt-5">
-            <h2 class="titulo_mapa ">Nuestras propiedades</h2>
+        <section class="d-flex flex-column align-items-center justify-content-center p-4 mt-5">
+            <h2 class="titulo_mapa">Nuestras propiedades</h2>
             
 
             <div class="container justify-content-center align-items-center">
-                <iframe class="mapa w-100 rounded-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14118.551020472916!2d-64.25431509999999!3d-27.79013375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5212435b47ff%3A0x686d262a0e783266!2sHotel%20Solano!5e0!3m2!1ses!2sar!4v1688239885904!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-100 rounded-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14118.551020472916!2d-64.25431509999999!3d-27.79013375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5212435b47ff%3A0x686d262a0e783266!2sHotel%20Solano!5e0!3m2!1ses!2sar!4v1688239885904!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            </div>
    |    </section>
 
         <!--Consulta de la propiedad-->
         
-        <section class="container cuadro_deConsulta_index">
+        <section class="container cuadro_deConsulta_index border border-2 rounded-4 mb-3 pb-3">
             <!--Subtiitulo-->
-            <div class="container d-flex justify-content-center align-items-center">  <h2 class="espaciado">Consultas</h2> </div>
+            <div class="container d-flex justify-content-center align-items-center">  <h2 class="mt-3 mb-3">Consultas</h2> </div>
 
-            <section class="d-flex flex-row container seccion_consultas_index">
+            <section class="d-flex flex-md-row flex-column container justify-content-evenly align-items-evenly ">
             <!--Informacion de la inmobiliaria-->
-                <section class="d-flex col-7 flex-column justify-content-evenly seccion_info_index align-items-center">
-                        <div class="d-inline-flex flex-row col-6 align-items-center justify-content-evenly contenedor_info_index">
+                <section class="d-flex flex-column col-md-7 col-12 justify-content-evenly align-items-center row">
+                        <div class="d-inline-flex flex-row col-md-6 col-12 align-items-center justify-content-evenly p-3 border border-dark border-1 rounded-pill contenedor_info_index">
                             <i class="fas fa-phone fa-2xl"></i>
                             <div class="d-flex flex-column margin_left_20">
                                 <p>
@@ -279,7 +281,7 @@
                             </div>
                         </div>
             
-                        <div class="d-inline-flex flex-row col-6 align-items-center justify-content-evenly contenedor_info_index">
+                        <div class="d-inline-flex flex-row col-md-6 col-12 align-items-center justify-content-evenly p-3 border border-dark border-1 rounded-pill contenedor_info_index">
                             <i class="fas fa-map-marker-alt fa-2xl"></i>
                             <div class="d-flex flex-column margin_left_20">
                                 <p>
@@ -291,7 +293,7 @@
                             </div>
                         </div>
             
-                        <div class="d-inline-flex flex-row col-6 align-items-center justify-content-evenly contenedor_info_index">
+                        <div class="d-inline-flex flex-row col-md-6 col-12 align-items-center justify-content-evenly p-3 border border-dark border-1 rounded-pill contenedor_info_index">
                             <i class="far fa-clock fa-2xl"></i>
                             <div class="d-flex flex-column margin_left_20">
                                  <p>
@@ -354,11 +356,11 @@
            <h3 class="h3_Footer fw-bolder">Mapa de sitio</h3>
             <nav>
                 <ul class="list-unstyled">
-                    <li><a class="text-decoration-none link-dark" href="#">Inicio</a></li>
-                    <li><a class="text-decoration-none link-dark" href="./Pages/Sobre_Nos.html">Sobre Nosotros</a></li>
-                    <li><a class="text-decoration-none link-dark" href="./Pages/Servicios.html">Nuestros servicios</a></li>
-                    <li><a class="text-decoration-none link-dark" href="./Pages/Propiedades.html">Propiedades</a></li>
-                    <li><a class="text-decoration-none link-dark" href="./Pages/Contacto.html">Contactanos</a></li>
+                    <li><a class="text-decoration-none ancla_footer" href="#">Inicio</a></li>
+                    <li><a class="text-decoration-none ancla_footer" href="./Pages/Sobre_Nos.html">Sobre Nosotros</a></li>
+                    <li><a class="text-decoration-none ancla_footer" href="./Pages/Servicios.html">Nuestros servicios</a></li>
+                    <li><a class="text-decoration-none ancla_footer" href="./Pages/Propiedades.html">Propiedades</a></li>
+                    <li><a class="text-decoration-none ancla_footer" href="./Pages/Contacto.html">Contactanos</a></li>
                 </ul>
             </nav>
          </section>
@@ -379,7 +381,7 @@
             </div>         
         </section>
 
-        <section class="seccion_imgFooter d-inline-flex align-items-center justify-content-center">
+        <section class=" d-md-inline-flex d-none align-items-center justify-content-center">
             <div class="d-inline-block">        
                 <img class="logoFira_footer"src="./Assets/img/Logo-Fira-removebg-preview.png" alt="Logo Fira">
             </div>

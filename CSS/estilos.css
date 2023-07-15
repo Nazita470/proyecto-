@@ -44,13 +44,9 @@
 
 /*img index*/
 
-.main_index{
-    background-color: white;
-}
 
 .div_imagen{
     height: 600px;
-    width: 100%;
     background-image: url("../Assets/img/Fondo.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -58,19 +54,8 @@
    
 }
 
-.imagen{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    object-fit: cover;
-}
 
 /*check box*/
-
-.seccion_checkBox{
-    margin-bottom: 30px;
-}
-
 .boton_check{
     font-size: 20px;
     border: 1px solid grey;
@@ -96,32 +81,10 @@
 
   /*Selector*/
 
-  .form_select_index{
-    margin-right: 20px;
-    margin-top: 0;
-  }
-
-  .div_select_index{
-    margin-top: 0;
-    padding: 0;
-    height: 100%;
-  }
-
-  .form-select{
-    width: auto;
-    height: 100%;
-  }
-
- 
-
   /*Boton buscar*/
 
   .boton_buscar{
     background-color: rgb(212, 204, 204);
-    color: black;
-    padding: 10px;
-    border-radius: 10px; 
-    border: 1px solid black;
   }
 
   .boton_buscar:hover{
@@ -134,16 +97,15 @@
 
 /*titulos propiedades index*/
 .h1_prop{
-    margin-top: 30px;
+    font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .h2_prop{
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 0px 30px;
 }
 
-/*las propiedades*/
+/*tarjetas propiedades*/
 
 .div_prop{
     width: 350px;
@@ -151,8 +113,6 @@
 }
 
 .propiedad1{
-    width: 100%;
-    height: 70%;
     object-fit: cover;
 }
 
@@ -166,42 +126,16 @@
     background-color: rgb(183, 178, 178);
    
 }
-/*mapa*/
-.seccion_mapa {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 20px;
-}
 
+/*mapa del index*/
 .titulo_mapa{
     font-size: 3rem;
 }
 
-.div_mapa{
-   width: 80%;
-   height: 500px;
-   padding: 20px;
-}
 
-.mapa {
-    width: 100%;
-    height: 500px;
-    border-radius: 30px;
-}
-
-
-  /*seccion que contiene las cards en el index*/
-  .seccion_info_index{
-    margin-top: 20px ;
-    margin-bottom: 50px;
-  }
+  /*seccion que contiene las cards de informacion en el index*/
     
-  .contenedor_info_index{
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 20px;
+  .contenedor_info_index{  
     background-color: rgba(221, 221, 221, 0.905)
   }
 
@@ -211,34 +145,23 @@
   }
 
   .cuadro_deConsulta_index{
-    border: 2px solid rgba(128, 128, 128, 0.233);
-    border-radius: 15px;
-    margin-bottom: 50px;
-    padding-bottom: 10px;
+    border-color: rgba(128, 128, 128, 0.233);
   }
 
 
+
+
+/*css EMPRESA*/
+
 .titulo_SobreNos{   
     font-size: 50px;
-    font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
    
 }
 
-/*css EMPRESA*/
-.div_Empresa{
-    width: 50%;
-}
-
-
 .p_Empresa{
-    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-}
-
-.seccion_empresaImg{
-   width: 50%;  
 }
 
 
@@ -278,31 +201,22 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.div_contacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
 .input{
-    display: inline-block;
-    width: 48%;
     height: 30px;
-    
 }
 
 .textarea{
-    width: 100%;
     height: 200px;
 }
 
 .boton_enviar{
-    margin-top: 20px;
-    width: 100%;
     height: 30px;
-    border: 1px solid black;
-    border-radius: 20px;
+}
+
+.boton_enviar:hover{
+    background-color: rgb(235 24 8);
+    color: white;
+    border: 2px solid black;
 }
 
 /*css servicios */
@@ -327,20 +241,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.div_servicios_img{
-    display: inline-block;
-    width: 200px;
-}
-.img_siempre_servicios{
-    width: 100%;
-}
-
 .div_uno_servicios{
-    display: inline-block;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200px;
-    width: 60%;
     margin-bottom: 20px;
     margin-left: 20px;
 }
@@ -575,13 +479,13 @@ footer{
 .espaciado{
     margin: 20px 0;
 }
-
-/*imagenes footer*/
-
-.seccion_imgFooter{
-    margin-right: 10%;
+.ancla_footer{
+    color: black;
 }
 
+footer nav .ancla_footer:hover{
+    color: red;
+}
 
 
 
@@ -609,37 +513,9 @@ footer{
 
 
 @media only screen and (min-width: 0px) and (max-width: 1500px){
-
-
-  .datos_footer{
-    margin-left: initial;
-  }
-
-  .seccion_imgFooter{
-    margin-right: initial;
-  }
-
-  .div_Empresa{
-    width: 70%;
-  }
-
-  .seccion_empresaImg{
-    width: 70%;
-  }
-
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1200px){
-
-    .seccion_empresaImg_imagenes{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .seccion_main_propiedad{
-        width: 90%;
-    }
 
     .numeroTelefono_formulario_consulta_propiedad{
         flex-direction: column;
@@ -653,41 +529,11 @@ footer{
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1000px){
-    .seccion_servicios_img{
-        flex-direction: column;
-    }
-
-    .div_servicios_img{
-        margin-top: 30px;
-        order: 2;
-    }
-
-    
-
 
 }   
 
 @media only screen and (min-width: 0px) and (max-width: 900px){
     /*Parte del main del index*/
-    .seccion_selectBuscador_index{
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        
-    }
-
-    .form_select_index{
-        margin-bottom: 30px;
-    }
-
-    .seccion_checkBox{
-        display: flex;
-        width: 60%;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-self: center !important;
-    }
-
     .seccion_checkBox{
         margin-bottom: 20px;
     }
@@ -700,11 +546,6 @@ footer{
 
     .seccion_info_index, .contenedor_redes_index, .contenedor_info_index{
         width: 100%;
-    }
-
-
-    .seccion_imgFooter{
-      display: none !important;
     }
 
     .consulta_propiedad{
@@ -734,32 +575,11 @@ footer{
         padding-left: 10px;
        
     }
-
-
-    /*cambios contacto*/
-   
-    .div_contacto{
-        flex-direction: column;
-    }
-
-    .input{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-  
+}
     
-   }
+   
 
    @media only screen and (min-width: 0px) and (max-width: 700px){
-     .div_Empresa{
-        width: 80%;
-      }
-    
-      .seccion_empresaImg{
-        width: 80%;
-      }
-
       .seccion_main_propiedad{
         grid-template-columns: 100%;
         grid-template-rows:  1fr 200px auto 1fr 500px;
@@ -774,3 +594,8 @@ footer{
    
    }
 
+   @media only screen and (max-width: 600px){
+     .titulo_mapa{
+        font-size: 2rem;
+     }
+   }

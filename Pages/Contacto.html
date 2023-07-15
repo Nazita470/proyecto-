@@ -35,16 +35,16 @@
          
     </header>
 
-    <main  class="d-flex flex-column align-items-center justify-content-center mt-5 mb-5 container">
+    <main  class="d-flex flex-column align-items-center justify-content-center mt-3 mb-3 container ">
     
         <h1 class="h1_contacto text-center fw-bold mb-5">¡Contactanos por donde quieras!</h1>
 
        
-        <section class="redes_sociales d-flex flex-md-row flex-column align-items-center justify-content-evenly w-100">
+        <section class="d-flex flex-md-row flex-column align-items-center justify-content-evenly col-12">
            
             <section class="d-inline-block">
                 <a class="text-decoration-none d-flex flex-column link-dark align-items-center justify-content-center" href="https://www.instagram.com/inmosalvatierra/" target="_blank">
-                    <div class="div_img_contacto">
+                    <div class=" mb-5">
                         <i class="fab fa-instagram fa-2xl" style="color: #e92b16;"></i>
                     </div>
     
@@ -62,7 +62,7 @@
                
             <section class="d-inline-block">
              <a class="text-decoration-none d-flex flex-column link-dark align-items-center justify-content-center" href="https://www.facebook.com/inmosalvatierra" target="_blank">
-                <div class="div_img_contacto">
+                <div class="mb-5">
                     <i class="fab fa-facebook-f fa-2xl" style="color: #e92b16;"></i>
                 </div>
 
@@ -79,7 +79,7 @@
 
             <section class="d-inline-block">
                 <a class="text-decoration-none d-flex flex-column link-dark align-items-center justify-content-center" href="https://api.whatsapp.com/send?phone=5493854930091" target="_blank">
-                    <div class="div_img_contacto">
+                    <div class="mb-5">
                         <i class="fab fa-whatsapp  fa-2xl" style="color: #e92b16;"></i>
                     </div>
     
@@ -100,20 +100,20 @@
 
        
 
-        <h2 class="h2_contacto">Formulario de contacto</h2>
-        <form action="" class=" w-75 d-flex flex-column mt-3">
+        <h2 class="h2_contacto mt-5">Formulario de contacto</h2>
+        <form action="" class=" col-10 d-flex flex-column mt-3 pe-0 ps-0 row">
 
-            <div class="d-flex flex-md-column justify-content-between">
-                <input class="input" id ="nombre" name="nombre" type="text" placeholder=" Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
-                <input class="input" id="email" type="email" placeholder="Email" required>
+            <div class="d-flex flex-md-row flex-column justify-content-between col-12">
+                <input class="input col-md-5 col-12 mb-3" id ="nombre" name="nombre" type="text" placeholder=" Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
+                <input class="input col-md-5 mb-3 col-12" id="email" type="email" placeholder="Email" required>
             </div>
 
-            <div class="div_mensajeContacto">
-                <textarea class="textarea"name="" id="" cols="20" rows="5" placeholder="Mensaje" required></textarea>
+            <div class="col-12">
+                <textarea class="textarea col-12" name="" id="" cols="20" rows="5" placeholder="Mensaje" required></textarea>
             </div>
 
-            <div>
-                <input class="boton_enviar" type="submit" name="" id="enviar" value="Enviar">
+            <div class="col-12">
+                <input class="boton_enviar col-12 mt-3 border-1 rounded-pill" type="submit" name="" id="enviar" value="Enviar">
             </div>
         </form>
 
@@ -125,11 +125,11 @@
            <h3 class="h3_Footer fw-bolder">Mapa de sitio</h3>
             <nav>
                 <ul class="list-unstyled">
-                    <li><a href="../index.html"  class="text-decoration-none link-dark"></a>Inicio</li>
-                    <li><a href="../Pages/Sobre_Nos.html" class="text-decoration-none link-dark">Sobre Nosotros</a></li>
-                    <li><a href="../Pages/Servicios.html" class="text-decoration-none link-dark">Nuestros servicios</a></li>
-                    <li><a href="../Pages/Propiedades.html" class="text-decoration-none link-dark">Propiedades</a></li>
-                    <li><a href="../Pages/Contacto.html" class="text-decoration-none link-dark">Contactanos</a></li>
+                    <li><a href="../index.html"  class="text-decoration-none ancla_footer">Inicio</a></li>
+                    <li><a href="../Pages/Sobre_Nos.html" class="text-decoration-none ancla_footer">Sobre Nosotros</a></li>
+                    <li><a href="../Pages/Servicios.html" class="text-decoration-none ancla_footer">Nuestros servicios</a></li>
+                    <li><a href="../Pages/Propiedades.html" class="text-decoration-none ancla_footer">Propiedades</a></li>
+                    <li><a href="../Pages/Contacto.html" class="text-decoration-none ancla_footer">Contactanos</a></li>
                 </ul>
             </nav>
         </section>
@@ -150,7 +150,7 @@
             </div>         
         </section>
 
-        <section class="seccion_imgFooter d-inline-flex align-items-center justify-content-center">
+        <section class="seccion_imgFooter d-md-inline-flex d-none align-items-center justify-content-center">
             <div class="d-inline-block">        
                 <img clas="logoFira_footer"src="../Assets/img/Logo-Fira-removebg-preview.png" alt="Logo Fira">
             </div>
