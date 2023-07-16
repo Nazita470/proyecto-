@@ -136,16 +136,17 @@
   /*seccion que contiene las cards de informacion en el index*/
     
   .contenedor_info_index{  
-    background-color: rgba(221, 221, 221, 0.905)
-  }
+    background-color: rgba(221, 221, 221, 0.905);
+    border-color: black;
+}
 
   .contenedor_info_index:hover{
-    border: 2px solid black;
+    border: 2px solid  red;
     background-color: rgb(180, 179, 179);
   }
 
   .cuadro_deConsulta_index{
-    border-color: rgba(128, 128, 128, 0.233);
+    border: 1px solid rgba(128, 128, 128);
   }
 
 
@@ -211,12 +212,13 @@
 
 .boton_enviar{
     height: 30px;
+    background-color: rgb(235 24 8);
+    color: white;
 }
 
 .boton_enviar:hover{
-    background-color: rgb(235 24 8);
     color: white;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 /*css servicios */
@@ -257,149 +259,30 @@
 
 
 
-/*css propiedad */
-.main_propiedad{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 20px;
-}
-
-.seccion_main_propiedad{
-    text-align: center;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 1fr 200px auto 1fr;
-    grid-template-areas: 
-        "img img"
-        "datos nav_prop"
-        "carac nav_prop"
-        "mapa mapa";
-    row-gap: 20px;   
-    column-gap: 20px; 
-}
-
-
-/*imagenes de la propiedad*/
-.seccion_imagenes_propiedad{
-    grid-area: img;
-    display: flex;
-}
-
-.div_imagenes_propiedad{/*contiene la imagen grnade*/
-    background-color: black;
-    width: 50%;
-    height: 100%;
-}
-
-.seccionImg_imagenes_propiedad{/*contiene los divs de las imganes chicas*/
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
-    width: 50%;
-}
-
-.div_imagenesChicas_propiedad{/*div imagenes chicas*/
-    width: 100%;
-    height: 50%;
-}
-
-.imagen_propiedad{/*imagenes*/
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-.fondo{
-    background-color: brown;
-}
-
-/*consulta de la propiedad*/
-.consulta_propiedad{
-   grid-area: nav_prop;
-}
-
-/*contenedor de la consulta*/
-.div_consulta_propiedad{
-    display: inline-block;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: rgb(243 238 238);
-    text-align: center;
-}
-
-/*titulo formulario*/
-.h3_consulta_propiedad_formulario{
-    margin: 10% 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-}
+/*css propiedad 
 
 /*Email*/
-.input_email_formulario_consulta_propiedad{
-    width: 80%;
+.altura_input{ 
     height: 50px;
-    border-radius: 10px;
-    text-align: start;
-    padding-left: 5%;
 }
 
-/*contiene input  nombre y telefono*/
-.numeroTelefono_formulario_consulta_propiedad{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 40px auto;
+.border-radius-20{
+    border-radius: 20px;
 }
 
-.input_numeroTelefono_formulario_consulta_propiedad{
-    width: 45%;
-    height: 50px;
-    border-radius: 10px;
-    text-align: start;
-    padding-left: 5%;
-}
-
-/*mensaje*/
-.textArea_formulario_consulta_propiedad{
-    width: 80%;
-    border-radius: 10px;
-    padding: 5px;
-}
 
 /*Enviar*/
-.botonEnviar_formulario_consulta_propiedad{
-    width: 80%;
-    height: 50px;
-    color: white;
-    text-align: center;
+.color_boton_propiedad{  
     background-color: rgb(235 24 8);
-    border-radius: 10px;
-    margin: 20px 0px;
 }
 
 /*DATOS de la propiedad*/
-.datos_propiedad{
-    grid-area: datos;
-    display: inline-flex;
-    border-radius: 10px;
-    border: 1px solid black;
-    flex-direction: column;
-    align-items: start;
-}
-
-.divCompartir_datos_propiedad{
-    align-self: end;
-    margin-top: 20px;
-    margin-right: 50px;
-    position: absolute;
-}
 
 /*Abarca los titulos*/
+.colorBorde-Gris{
+    border-color: rgb(93, 93, 93);
+}
+
 .divTitulo_datos_propiedad{
     margin: 20px;
 }
@@ -416,12 +299,6 @@
     font-weight: 200;
 }
 
-/*metros, cant de habitaciones, baños*/
-.divInfo_datos_propiedad{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .p_divInfo_datos_propiedad{
     font-weight: 300;
@@ -429,40 +306,16 @@
 }
 
 
-/*caracteristicas*/
-.caracteristicas_propiedad{
-    grid-area: carac;
-    text-align: start;
-}
-
-.h2_caracteristicas_propiedad{
-    margin-bottom: 30px;
-}
-
-.p_h2_caracteristicas_propiedad{
-    margin-bottom: 30px;
-}
-
-/*mapa*/
-.seccion_mapa_propiedad{
-    grid-area: mapa;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-bottom: 50px;
-}
-
 /*Titulo mapa*/
 .h2_seccion_mapa_propiedad{
     font-size: 30px;
-    align-self: start;
-    margin: 30px 0
 }
 
 .mapa_propiedad{
     width: 100%;
     border-radius: 10px; 
 }
+
 
 
 
@@ -479,6 +332,7 @@ footer{
 .espaciado{
     margin: 20px 0;
 }
+
 .ancla_footer{
     color: black;
 }
@@ -510,27 +364,7 @@ footer nav .ancla_footer:hover{
     color: black;
 }
 
-
-
-@media only screen and (min-width: 0px) and (max-width: 1500px){
-}
-
-@media only screen and (min-width: 0px) and (max-width: 1200px){
-
-    .numeroTelefono_formulario_consulta_propiedad{
-        flex-direction: column;
-    }
-
-    .input_numeroTelefono_formulario_consulta_propiedad{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-}
-
-@media only screen and (min-width: 0px) and (max-width: 1000px){
-
-}   
+  
 
 @media only screen and (min-width: 0px) and (max-width: 900px){
     /*Parte del main del index*/
@@ -538,63 +372,10 @@ footer nav .ancla_footer:hover{
         margin-bottom: 20px;
     }
 
-    .seccion_consultas_index{
-        flex-direction: column  !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
+}  
 
-    .seccion_info_index, .contenedor_redes_index, .contenedor_info_index{
-        width: 100%;
-    }
 
-    .consulta_propiedad{
-        text-align: initial;
-        width: 100%;
-     }
-
-     .h3_consulta_propiedad_formulario{
-        margin: 20px;
-        text-align: start;
-     }
-
-     .input_email_formulario_consulta_propiedad{
-        height: 30px;
-        padding-left: 10px;
-        margin: initial;
-     }
-    
-    .numeroTelefono_formulario_consulta_propiedad{
-        flex-direction: column;
-        
-    }
-
-    .input_numeroTelefono_formulario_consulta_propiedad{
-        width: 100%;
-        height: 30px;
-        padding-left: 10px;
-       
-    }
-}
-    
-   
-
-   @media only screen and (min-width: 0px) and (max-width: 700px){
-      .seccion_main_propiedad{
-        grid-template-columns: 100%;
-        grid-template-rows:  1fr 200px auto 1fr 500px;
-        grid-template-areas: 
-        "img "
-        "datos"
-        "carac"
-        "mapa"
-        "nav_prop";
-      }
-
-   
-   }
-
-   @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
      .titulo_mapa{
         font-size: 2rem;
      }
