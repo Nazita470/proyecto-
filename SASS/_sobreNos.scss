@@ -1,0 +1,17 @@
+.main_SobreNos{
+    min-height: 70vh;
+    .titulo_SobreNos{   
+        font-size: $size-titulos;
+        font-family: $letra-titulos;
+       
+    }
+    .p_Empresa{
+        font-family: $letra-secundaria;
+        font-size: $size-chico;
+    }
+    .p_EmpresaImg{
+        margin-left: 10px;
+        font-size: 16px;
+        font-family: $letra-secundaria;
+    }
+}

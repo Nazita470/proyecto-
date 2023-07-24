@@ -1,0 +1,15 @@
+footer{
+    background-color: $color-footer;
+    .h3_Footer{
+        font-size: $size-mediano;
+        font-family: 'Quicksand', sans-serif;
+    }
+    nav{
+        .ancla_footer{
+            color: black;
+            &:hover{
+                color: $color-botones-anclas;
+            }
+        } 
+    }
+}

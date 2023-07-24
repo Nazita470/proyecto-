@@ -45,7 +45,6 @@
   margin: 20px 0;
 }
 
-/*css header*/
 .navbar-light .navbar-nav .link_navegador_header {
   margin: 20px;
   font-size: 20px;
@@ -131,7 +130,16 @@
   background-color: rgb(183, 178, 178);
 }
 
-/*css EMPRESA*/
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  .seccion_checkBox {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .titulo_mapa {
+    font-size: 2rem;
+  }
+}
 .main_SobreNos {
   min-height: 70vh;
 }
@@ -149,7 +157,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* css CONTACTO*/
 .h1_contacto {
   font-size: 40px;
   font-family: "Ubuntu", sans-serif;
@@ -187,9 +194,9 @@
 .boton_enviar:hover {
   color: white;
   border: 2px solid black;
+  background-color: red;
 }
 
-/*css servicios */
 .titulo_servicios {
   font-size: 40px;
   font-family: "Ubuntu", sans-serif;
@@ -214,7 +221,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/*css propiedad */
 .carousel-item {
   height: 70vh;
 }
@@ -250,7 +256,21 @@
   font-size: 30px;
 }
 
-/*FOOTER*/
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  .carousel-item {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel-item {
+    height: 30vh;
+  }
+}
 footer {
   background-color: #b9b7b7;
 }
@@ -263,47 +283,4 @@ footer nav .ancla_footer {
 }
 footer nav .ancla_footer:hover {
   color: rgb(244, 26, 26);
-}
-
-/*whatsapp*/
-.wps {
-  display: inline-block;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  color: #3dd13d;
-  z-index: 10;
-}
-
-.link_wps {
-  text-decoration: none;
-  color: #058b05;
-}
-
-.link_sin_decoracion {
-  text-decoration: none;
-  color: black;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 900px) {
-  /*Parte del main del index*/
-  .seccion_checkBox {
-    margin-bottom: 20px;
-  }
-  .carousel-item {
-    height: 50vh;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .carousel-item {
-    height: 40vh;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .titulo_mapa {
-    font-size: 2rem;
-  }
-  .carousel-item {
-    height: 30vh;
-  }
 }/*# sourceMappingURL=estilos.css.map */

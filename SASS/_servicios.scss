@@ -1,0 +1,28 @@
+.titulo_servicios{
+    font-size: $size-titulos;
+    font-family: $letra-titulos;
+}
+
+.seccion_servicios{ 
+    margin-bottom: 100px;
+
+    .h2_servicios{
+        font-size: $size-mediano;
+        font-family: $letra-secundaria;
+    }
+
+    .div_uno_servicios{
+        font-size: $size-chico;
+        font-family: $letra-secundaria;
+        font-weight: 200px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .div_parrafos_servicios{
+        font-size: $size-chico;
+        font-family: $letra-secundaria;
+    }
+}
+
+

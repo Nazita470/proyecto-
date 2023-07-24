@@ -1,0 +1,100 @@
+.div_imagen{
+    height: 600px;
+    background-image: url("../Assets/img/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*check box*/
+    .boton_check{
+        font-size: $size-chico;
+        border: $borde-claro;
+        background-color: white;
+        color: black;
+        &:hover{
+            border: $border-hover-rojo;
+            background-color: white;
+            color: black;
+        }
+        &:checked{
+            background-color:  rgb(255, 40, 40);
+        }
+    }
+
+     /*Boton buscar*/
+
+    .boton_buscar{
+        background-color: $color-gris;
+         &:hover{
+             border: $border-hover-negro;
+        }
+    }
+}
+
+.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: $color-inmobiliaria;
+    border-color: #51585e;
+  }
+
+
+/*titulos propiedades index*/
+
+.h1_prop{
+    font-size: $size-titulos;
+    font-family: $letra-titulos;
+}
+
+.h2_prop{
+    font-family: $letra-titulos;
+}
+
+/*tarjetas propiedades*/
+
+.div_prop{
+    width: 350px;
+    height: 500px;
+
+    .propiedad1{
+        object-fit: cover;
+    }
+
+    /*boton en propiedades*/
+    .reservar{
+        font-family: $letra-secundaria;
+        background-color: $color-gris;
+   
+    }
+}
+
+
+
+
+/*mapa del index*/
+.titulo_mapa{
+    font-size: $size-titulos;
+}
+
+.cuadro_deConsulta_index{
+    border: $borde-claro;
+    .contenedor_info_index{  
+        background-color: rgba(221, 221, 221, 0.905);
+        border-color: black;
+        &:hover{
+            border: $border-hover-rojo;
+             background-color: $color-gris;
+        }
+    }
+  }
+
+@media only screen and (min-width: 0px) and (max-width: 900px){
+    .seccion_checkBox{
+        margin-bottom: 20px;
+    }
+}  
+
+@media only screen and (max-width: 600px){
+    .titulo_mapa{
+       font-size: 2rem;
+    }
+}

@@ -1,0 +1,59 @@
+.carousel-item{
+    height: 70vh;
+}
+
+.ancla_prop{
+    color: $color-botones-anclas;
+    &:hover{
+        color: $color-botones-anclas;
+    }
+}
+
+.divTitulo_datos_propiedad{
+    margin: 20px;
+
+    /*Titulo*/
+
+    .divTitulo_h1_datos_propiedad{
+        font-size: $size-mediano;
+        margin-bottom: 10px;
+    }
+
+    /*Subtitulo*/
+    .divTitulo_h2_datos_propiedad{
+        font-size: $size-mediano;
+        font-weight: 200;
+    }
+}
+
+
+
+.p_divInfo_datos_propiedad{
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+
+/*Titulo mapa*/
+.h2_seccion_mapa_propiedad{
+    font-size: $size-mediano;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px){
+    .carousel-item{
+        height: 50vh;
+    }
+
+}  
+
+@media only screen and (max-width: 750px)  {
+    .carousel-item{
+        height: 40vh;
+    }
+}    
+
+@media only screen and (max-width: 600px){
+     .carousel-item{
+        height: 30vh;
+    }
+   }

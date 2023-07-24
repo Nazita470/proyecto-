@@ -1,0 +1,12 @@
+.navbar-light {
+    .navbar-nav{
+        .link_navegador_header{
+            margin: 20px;
+            font-size: $size-chico;
+            &:hover{
+                color: $color-inmobiliaria;
+            }
+        }
+    }
+}
+

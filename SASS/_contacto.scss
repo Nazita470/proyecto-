@@ -1,0 +1,42 @@
+.h1_contacto{
+    font-size: $size-titulos;
+    font-family: $letra-titulos;
+    margin-bottom: 50px;
+}
+
+
+.p_datos_img_contacto{
+     font-size: 2rem;
+     
+}
+
+.p2_datos_img_contacto{
+    font-size: $size-chico;
+}
+
+/*El formulario*/
+
+.h2_contacto{
+    margin-top: 100px;
+    font-size: $size-mediano;
+    font-family: $letra-titulos;
+}
+
+.input{
+    height: 30px;
+}
+
+.textarea{
+    height: 200px;
+}
+
+.boton_enviar{
+    height: 30px;
+    background-color: white;
+    color: black;
+    &:hover{
+        color: white;
+        border: $border-hover-negro;
+        background-color: $color-inmobiliaria;
+    }
+}
