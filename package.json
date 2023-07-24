@@ -1,0 +1,11 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "Pre entrega tres de dearollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nazareno Salvatierra",
+  "license": "ISC"
+}

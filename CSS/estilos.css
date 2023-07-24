@@ -1,420 +1,309 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Sono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@300&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@300&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-
-
-*{
-
-    padding: 0;
-    
-    margin: 0;
-    
-    box-sizing: border-box;
-    
-    }
-
-.margin_left_20{
-    margin-left: 20px;
+.margin_left_20 {
+  margin-left: 20px;
 }
 
 .margin-20 {
-    margin: 10px;
+  margin: 10px;
 }
 
-.heightTotal{
-    height: 100%;
+.heightTotal {
+  height: 100%;
 }
 
-
-
- /*css header*/  
-    
-.navbar-light .navbar-nav .link_navegador_header{
-    margin: 20px;
-    font-size: 20px;
+.altura_input {
+  height: 50px;
 }
 
-.navbar-light .navbar-nav .link_navegador_header:hover{
-    color: red;
+.border-radius-20 {
+  border-radius: 20px;
 }
 
-/*css INDEX*/
-
-/*img index*/
-
-
-.div_imagen{
-    height: 600px;
-    background-image: url("../Assets/img/Fondo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-   
+.alto_80vh {
+  height: 80vh;
 }
 
-
-/*check box*/
-.boton_check{
-    font-size: 20px;
-    border: 1px solid grey;
-    background-color: white;
-    color: black;
+.colorBorde-Gris {
+  border-color: rgb(183, 178, 178);
+  background-color: #e8e5e5;
 }
 
-.boton_check:hover{
-    border: 2px solid red;
-    background-color: white;
-    color: black;
+.color_boton_propiedad {
+  background-color: rgb(244, 26, 26);
 }
 
-.boton_check:checked{
-    background-color:  rgb(255, 40, 40);
+.espaciado {
+  margin: 20px 0;
+}
+
+/*css header*/
+.navbar-light .navbar-nav .link_navegador_header {
+  margin: 20px;
+  font-size: 20px;
+}
+.navbar-light .navbar-nav .link_navegador_header:hover {
+  color: red;
+}
+
+.div_imagen {
+  height: 600px;
+  background-image: url("../Assets/img/Fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*check box*/
+  /*Boton buscar*/
+}
+.div_imagen .boton_check {
+  font-size: 20px;
+  border: 1px solid rgb(128, 128, 128);
+  background-color: white;
+  color: black;
+}
+.div_imagen .boton_check:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: black;
+}
+.div_imagen .boton_check:checked {
+  background-color: rgb(255, 40, 40);
+}
+.div_imagen .boton_buscar {
+  background-color: rgb(183, 178, 178);
+}
+.div_imagen .boton_buscar:hover {
+  border: 2px solid black;
 }
 
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: red;
-    border-color: #51585e;
-  }
-
-  /*Selector*/
-
-  /*Boton buscar*/
-
-  .boton_buscar{
-    background-color: rgb(212, 204, 204);
-  }
-
-  .boton_buscar:hover{
-    border: 2px solid black;
-  }
-
-
-
-
-
-/*titulos propiedades index*/
-.h1_prop{
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+  background-color: red;
+  border-color: #51585e;
 }
 
-.h2_prop{
-    font-family: 'Roboto Condensed', sans-serif;
+/*titulos propiedades index*/
+.h1_prop {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.h2_prop {
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*tarjetas propiedades*/
-
-.div_prop{
-    width: 350px;
-    height: 500px;
+.div_prop {
+  width: 350px;
+  height: 500px;
+  /*boton en propiedades*/
 }
-
-.propiedad1{
-    object-fit: cover;
+.div_prop .propiedad1 {
+  object-fit: cover;
 }
-
-.parrafo_prop{ 
-    font-size: 20px;
-}
-
-/*boton en propiedades*/
-.reservar{
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(183, 178, 178);
-   
+.div_prop .reservar {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(183, 178, 178);
 }
 
 /*mapa del index*/
-.titulo_mapa{
-    font-size: 3rem;
+.titulo_mapa {
+  font-size: 40px;
 }
 
-
-  /*seccion que contiene las cards de informacion en el index*/
-    
-  .contenedor_info_index{  
-    background-color: rgba(221, 221, 221, 0.905);
-    border-color: black;
+.cuadro_deConsulta_index {
+  border: 1px solid rgb(128, 128, 128);
 }
-
-  .contenedor_info_index:hover{
-    border: 2px solid  red;
-    background-color: rgb(180, 179, 179);
-  }
-
-  .cuadro_deConsulta_index{
-    border: 1px solid rgba(128, 128, 128);
-  }
-
-
-
+.cuadro_deConsulta_index .contenedor_info_index {
+  background-color: rgba(221, 221, 221, 0.905);
+  border-color: black;
+}
+.cuadro_deConsulta_index .contenedor_info_index:hover {
+  border: 2px solid red;
+  background-color: rgb(183, 178, 178);
+}
 
 /*css EMPRESA*/
-.main_SobreNos{
-    min-height: 70vh;
+.main_SobreNos {
+  min-height: 70vh;
 }
-
-.titulo_SobreNos{   
-    font-size: 50px;
-    font-family: 'Ubuntu', sans-serif;
-   
+.main_SobreNos .titulo_SobreNos {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
 }
-
-.p_Empresa{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+.main_SobreNos .p_Empresa {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
-
-
-.p_EmpresaImg{
-    margin-left: 10px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+.main_SobreNos .p_EmpresaImg {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* css CONTACTO*/
-
-.h1_contacto{
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 50px;
+.h1_contacto {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 50px;
 }
 
-.div_img_contacto{
-    margin-bottom: 60px;
+.p_datos_img_contacto {
+  font-size: 2rem;
 }
 
-
-.p_datos_img_contacto{
-     font-size: 2rem;
-     
-}
-
-.p2_datos_img_contacto{
-    font-size: 20px;
+.p2_datos_img_contacto {
+  font-size: 20px;
 }
 
 /*El formulario*/
-
-.h2_contacto{
-    margin-top: 100px;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
+.h2_contacto {
+  margin-top: 100px;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.input{
-    height: 30px;
+.input {
+  height: 30px;
 }
 
-.textarea{
-    height: 200px;
+.textarea {
+  height: 200px;
 }
 
-.boton_enviar{
-    height: 30px;
-    background-color: rgb(235 24 8);
-    color: white;
+.boton_enviar {
+  height: 30px;
+  background-color: white;
+  color: black;
 }
-
-.boton_enviar:hover{
-    color: white;
-    border: 3px solid black;
+.boton_enviar:hover {
+  color: white;
+  border: 2px solid black;
 }
 
 /*css servicios */
-
-.main_servicios_container{
-    padding: 5% 10%;
+.titulo_servicios {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.titulo_servicios{
-    font-size: 50px;
-    font-family: 'Ubuntu', sans-serif;
+.seccion_servicios {
+  margin-bottom: 100px;
+}
+.seccion_servicios .h2_servicios {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccion_servicios .div_uno_servicios {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.seccion_servicios .div_parrafos_servicios {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-
-.seccion_servicios{ 
-    margin-bottom: 100px;
+/*css propiedad */
+.carousel-item {
+  height: 70vh;
 }
 
-
-.h2_servicios{
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
+.ancla_prop {
+  color: rgb(244, 26, 26);
+}
+.ancla_prop:hover {
+  color: rgb(244, 26, 26);
 }
 
-.div_uno_servicios{
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+.divTitulo_datos_propiedad {
+  margin: 20px;
+  /*Titulo*/
+  /*Subtitulo*/
+}
+.divTitulo_datos_propiedad .divTitulo_h1_datos_propiedad {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.divTitulo_datos_propiedad .divTitulo_h2_datos_propiedad {
+  font-size: 30px;
+  font-weight: 200;
 }
 
-.div_parrafos_servicios{
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+.p_divInfo_datos_propiedad {
+  font-weight: 300;
+  margin-left: 30px;
 }
-
-
-
-
-/*css propiedad 
-
-/*Email*/
-.imagen{
-    object-fit: cover;
-}
-
-.carousel-item{
-    height: 70vh;
-}
-
-.altura_input{ 
-    height: 50px;
-}
-
-.border-radius-20{
-    border-radius: 20px;
-}
-
-
-/*Enviar*/
-.color_boton_propiedad{  
-    background-color: rgb(235 24 8);
-}
-
-/*DATOS de la propiedad*/
-
-/*Abarca los titulos*/
-.colorBorde-Gris{
-    border-color: rgb(186, 186, 186);
-    background-color: #e8e5e5;
-}
-
-.divTitulo_datos_propiedad{
-    margin: 20px;
-}
-
-/*Titulo*/
-.divTitulo_h1_datos_propiedad{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-/*Subtitulo*/
-.divTitulo_h2_datos_propiedad{
-    font-size: 20px;
-    font-weight: 200;
-}
-
-
-.p_divInfo_datos_propiedad{
-    font-weight: 300;
-    margin-left: 30px;
-}
-
 
 /*Titulo mapa*/
-.h2_seccion_mapa_propiedad{
-    font-size: 30px;
+.h2_seccion_mapa_propiedad {
+  font-size: 30px;
 }
-
-.mapa_propiedad{
-    width: 100%;
-    border-radius: 10px; 
-}
-
-.alto_80vh{
-    height: 80vh;
-}
-
-.ancla_prop{
-    color: rgb(244, 26, 26);
-}
-
-.ancla_prop:hover{
-    color: rgb(244, 26, 26);
-}
-
-
 
 /*FOOTER*/
-footer{
-    background-color: #b9b7b7;
+footer {
+  background-color: #b9b7b7;
 }
-
-.h3_Footer{
-    font-size: 2rem;
-    font-family: 'Quicksand', sans-serif;
+footer .h3_Footer {
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
 }
-
-.espaciado{
-    margin: 20px 0;
+footer nav .ancla_footer {
+  color: black;
 }
-
-.ancla_footer{
-    color: black;
+footer nav .ancla_footer:hover {
+  color: rgb(244, 26, 26);
 }
-
-footer nav .ancla_footer:hover{
-    color: red;
-}
-
-
 
 /*whatsapp*/
-.wps{
-    display: inline-block;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    color: #3dd13d;
-    z-index: 10;
-    
+.wps {
+  display: inline-block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #3dd13d;
+  z-index: 10;
 }
 
-.link_wps{
-    text-decoration: none;
-    color: #058b05;
+.link_wps {
+  text-decoration: none;
+  color: #058b05;
 }
 
-.link_sin_decoracion{
-    text-decoration: none;
-    color: black;
+.link_sin_decoracion {
+  text-decoration: none;
+  color: black;
 }
 
-  
-
-@media only screen and (min-width: 0px) and (max-width: 900px){
-    /*Parte del main del index*/
-    .seccion_checkBox{
-        margin-bottom: 20px;
-    }
-
-    .carousel-item{
-        height: 50vh;
-    }
-
-}  
-
-@media only screen and (max-width: 750px)  {
-    .carousel-item{
-        height: 40vh;
-    }
-}    
-
-@media only screen and (max-width: 600px){
-     .titulo_mapa{
-        font-size: 2rem;
-     }
-
-     .carousel-item{
-        height: 30vh;
-    }
-   }
-
-
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  /*Parte del main del index*/
+  .seccion_checkBox {
+    margin-bottom: 20px;
+  }
+  .carousel-item {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .titulo_mapa {
+    font-size: 2rem;
+  }
+  .carousel-item {
+    height: 30vh;
+  }
+}/*# sourceMappingURL=estilos.css.map */
