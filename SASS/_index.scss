@@ -1,9 +1,7 @@
 .div_imagen{
     height: 600px;
     background-image: url("../Assets/img/Fondo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include img-fondo(no-repeat, center, cover);
 
     /*check box*/
     .boton_check{
@@ -52,8 +50,7 @@
 /*tarjetas propiedades*/
 
 .div_prop{
-    width: 350px;
-    height: 500px;
+    @include size(350px, 500px);
 
     .propiedad1{
         object-fit: cover;

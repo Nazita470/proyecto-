@@ -1,0 +1,10 @@
+@mixin size ($width, $heigth){
+    height: $heigth;
+    width: $width;
+}
+
+@mixin img-fondo($repeat, $position, $cover){
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $cover;
+}

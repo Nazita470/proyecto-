@@ -101,8 +101,8 @@
 
 /*tarjetas propiedades*/
 .div_prop {
-  width: 350px;
   height: 500px;
+  width: 350px;
   /*boton en propiedades*/
 }
 .div_prop .propiedad1 {
