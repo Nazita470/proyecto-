@@ -23,20 +23,33 @@
 }
 
 .input{
-    height: 30px;
+    height: 50px;
 }
 
 .textarea{
     height: 200px;
 }
 
-.boton_enviar{
+.b{
     height: 30px;
-    background-color: white;
+}
+
+.boton_enviar{
+   @extend .b;
+   background-color: white;
     color: black;
     &:hover{
         color: white;
         border: $border-hover-negro;
         background-color: $color-inmobiliaria;
+    }
+}
+
+.boton_borrar{
+    @extend .b;
+    background-color: $color-gris;
+    color: white;
+    &:hover{
+        border: 2px solid black;
     }
 }

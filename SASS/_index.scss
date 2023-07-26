@@ -23,8 +23,10 @@
 
     .boton_buscar{
         background-color: $color-gris;
+        color: black;
          &:hover{
              border: $border-hover-negro;
+             color: white;
         }
     }
 }
