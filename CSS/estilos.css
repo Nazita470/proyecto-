@@ -45,6 +45,10 @@
   margin: 20px 0;
 }
 
+.resaltar {
+  color: red;
+}
+
 @keyframes boton {
   100% {
     border: 1px solid black;
@@ -138,6 +142,18 @@
   background-color: rgb(183, 178, 178);
 }
 
+.fa-instagram {
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-whatsapp {
+  color: #075E54;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .seccion_checkBox {
     margin-bottom: 20px;
@@ -150,9 +166,6 @@
 }
 .main_SobreNos {
   min-height: 70vh;
-}
-.main_SobreNos .seccion_sobreNosotros {
-  transform: translateY(-30px);
 }
 .main_SobreNos .seccion_sobreNosotros .titulo_SobreNos {
   font-size: 40px;
@@ -305,4 +318,13 @@ footer nav .ancla_footer {
 }
 footer nav .ancla_footer:hover {
   color: rgb(244, 26, 26);
+}
+footer .fa-instagram-square {
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+footer .fa-facebook-square {
+  color: #3b5998;
+}
+footer .fa-whatsapp-square {
+  color: #075E54;
 }/*# sourceMappingURL=estilos.css.map */

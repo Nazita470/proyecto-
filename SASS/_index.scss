@@ -86,6 +86,13 @@
     }
   }
 
+ 
+  @each $red, $name-color in $colores_redes{
+    .fa-#{$red}{
+        color: $name-color;
+    }
+}  
+
 @media only screen and (min-width: 0px) and (max-width: 900px){
     .seccion_checkBox{
         margin-bottom: 20px;

@@ -12,4 +12,10 @@ footer{
             }
         } 
     }
+
+    @each $red, $name-color in $colores_redes{
+        .fa-#{$red}-square{
+            color: $name-color;
+        }
+    } 
 }
