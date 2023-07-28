@@ -1,4 +1,4 @@
-$color-footer: #b9b7b7;
+$color-footer: #f8f9fa;
 $color-inmobiliaria: red;
 $color-gris: rgb(183, 178, 178);
 $color-botones-anclas:  rgb(244, 26, 26) ;
@@ -15,11 +15,9 @@ $size-mediano: 30px;
 $size-titulos: 40px;
 
 $colores_redes:(
-    instagram: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%), 
+    instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%), 
     facebook: #3b5998 ,
     whatsapp: #075E54
-
-
 );
 
 

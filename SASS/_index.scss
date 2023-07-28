@@ -24,6 +24,7 @@
     .boton_buscar{
         background-color: $color-gris;
         color: black;
+        width: 100px;
          &:hover{
              border: $border-hover-negro;
              color: white;
@@ -61,10 +62,37 @@
     /*boton en propiedades*/
     .reservar{
         font-family: $letra-secundaria;
-        background-color: $color-gris;
-   
+        border: 2px solid gray;
+        position: relative;
+        text-decoration: none;
+        color: black;
+
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            transition: all .3s ease-in;
+        }
+        &::before{
+            top: -10px;
+            left: -10px;
+            border: inherit;
+            border-width: 3px 0 0 3px;
+         }
+        &::after{
+            bottom: -10px;
+            right: -10px;
+            border: inherit;
+            border-width: 0 3px 3px 0;
+         }
+         &:hover::before, &:hover::after{
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+         }
+      }
     }
-}
+
 
 
 
@@ -84,14 +112,25 @@
              background-color: $color-gris;
         }
     }
-  }
-
- 
-  @each $red, $name-color in $colores_redes{
-    .fa-#{$red}{
-        color: $name-color;
+    .contenedor_redes_index{
+        .ri-instagram-line{
+            background: map-get($colores_redes, instagram);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+        }
+        .fa-facebook{
+            color: map-get($colores_redes, facebook);
+            font-size: 40px;
+        }
+        .fa-whatsapp{
+            color: map-get($colores_redes, whatsapp);
+            font-size: 40px;
+        }
     }
-}  
+  }
+  
 
 @media only screen and (min-width: 0px) and (max-width: 900px){
     .seccion_checkBox{

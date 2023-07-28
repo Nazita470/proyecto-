@@ -12,10 +12,29 @@ footer{
             }
         } 
     }
-
-    @each $red, $name-color in $colores_redes{
-        .fa-#{$red}-square{
-            color: $name-color;
+    a{
+        .fa-facebook-square{
+            color: map-get($colores_redes, facebook);
         }
-    } 
+
+        .ri-instagram-line{
+            background: map-get($colores_redes, instagram);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            top: 5px
+        }
+
+        .fa-whatsapp-square{
+            color: map-get($colores_redes, whatsapp);
+        }
+    }
+
+    @media only screen and (max-width:600px){
+        .h3_Footer{
+            font-size: 25px;
+        
+       } 
+    }
 }

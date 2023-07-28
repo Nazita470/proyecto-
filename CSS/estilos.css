@@ -89,6 +89,7 @@
 .div_imagen .boton_buscar {
   background-color: rgb(183, 178, 178);
   color: black;
+  width: 100px;
 }
 .div_imagen .boton_buscar:hover {
   border: 2px solid black;
@@ -122,7 +123,33 @@
 }
 .div_prop .reservar {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(183, 178, 178);
+  border: 2px solid gray;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.div_prop .reservar::before, .div_prop .reservar::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in;
+}
+.div_prop .reservar::before {
+  top: -10px;
+  left: -10px;
+  border: inherit;
+  border-width: 3px 0 0 3px;
+}
+.div_prop .reservar::after {
+  bottom: -10px;
+  right: -10px;
+  border: inherit;
+  border-width: 0 3px 3px 0;
+}
+.div_prop .reservar:hover::before, .div_prop .reservar:hover::after {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
 }
 
 /*mapa del index*/
@@ -141,17 +168,20 @@
   border: 2px solid red;
   background-color: rgb(183, 178, 178);
 }
-
-.fa-instagram {
-  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+.cuadro_deConsulta_index .contenedor_redes_index .ri-instagram-line {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
 }
-
-.fa-facebook {
+.cuadro_deConsulta_index .contenedor_redes_index .fa-facebook {
   color: #3b5998;
+  font-size: 40px;
 }
-
-.fa-whatsapp {
+.cuadro_deConsulta_index .contenedor_redes_index .fa-whatsapp {
   color: #075E54;
+  font-size: 40px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
@@ -307,7 +337,7 @@
   }
 }
 footer {
-  background-color: #b9b7b7;
+  background-color: #f8f9fa;
 }
 footer .h3_Footer {
   font-size: 30px;
@@ -319,12 +349,22 @@ footer nav .ancla_footer {
 footer nav .ancla_footer:hover {
   color: rgb(244, 26, 26);
 }
-footer .fa-instagram-square {
-  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-footer .fa-facebook-square {
+footer a .fa-facebook-square {
   color: #3b5998;
 }
-footer .fa-whatsapp-square {
+footer a .ri-instagram-line {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 5px;
+}
+footer a .fa-whatsapp-square {
   color: #075E54;
+}
+@media only screen and (max-width: 600px) {
+  footer .h3_Footer {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
