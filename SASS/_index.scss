@@ -1,6 +1,6 @@
 .div_imagen{
     height: 600px;
-    background-image: url("../Assets/img/Fondo.jpg");
+    background-image: url("../Assets/img/Fondo-mobile.jpg");
     @include img-fondo(no-repeat, center, cover);
 
     /*check box*/
@@ -131,6 +131,11 @@
     }
   }
   
+  @media only screen and (min-width: 600px){
+    .div_imagen{
+        background-image: url("../Assets/img/Fondo.jpg");
+    }
+  }
 
 @media only screen and (min-width: 0px) and (max-width: 900px){
     .seccion_checkBox{

@@ -22,6 +22,10 @@
     height: 80vh;
 }
 
+.alto_70vh{
+    height: 70vh;
+}
+
 .colorBorde-Gris{
     border-color: $color-gris;
     background-color: #e8e5e5;
@@ -37,4 +41,8 @@
 
 .resaltar{
     color: red;
+}
+
+.object-fit-cover{
+    object-fit: cover;
 }

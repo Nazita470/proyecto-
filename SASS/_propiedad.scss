@@ -1,6 +1,14 @@
-.carousel-item{
+.carousel{
     height: 70vh;
+    .carousel-inner{
+        height: 100%;
+        .carousel-item{
+            height: inherit;
+        }
+    }
+    
 }
+
 
 .ancla_prop{
     color: $color-botones-anclas;
@@ -39,21 +47,15 @@
     font-size: $size-mediano;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 900px){
-    .carousel-item{
-        height: 50vh;
+@media only screen and (min-width: 0px) and (max-width: 950px){
+    .carousel{
+        height: 40vh;
     }
 
 }  
 
 @media only screen and (max-width: 750px)  {
-    .carousel-item{
-        height: 40vh;
+    .carousel{
+        height: 35vh;
     }
 }    
-
-@media only screen and (max-width: 600px){
-     .carousel-item{
-        height: 30vh;
-    }
-   }

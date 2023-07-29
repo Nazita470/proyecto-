@@ -23,7 +23,7 @@
 }
 
 .input{
-    height: 50px;
+    height: 40px;
 }
 
 .textarea{
@@ -32,24 +32,31 @@
 
 .b{
     height: 30px;
+    width: 200px;
 }
 
-.boton_enviar{
-   @extend .b;
-   background-color: white;
-    color: black;
-    &:hover{
-        color: white;
-        border: $border-hover-negro;
-        background-color: $color-inmobiliaria;
-    }
+.div-botones-contacto{
+    padding: 0 30%;
+    .boton_enviar{
+        @extend .b;
+        background-color: white;
+        color: black;
+       
+         &:hover{
+             color: white;
+             border: $border-hover-negro;
+             background-color: $color-inmobiliaria;
+         }
+     }
+     
+     .boton_borrar{
+         @extend .b;
+        
+         background-color: $color-gris;
+         color: white;
+         &:hover{
+             border: 2px solid black;
+         }
+     }
 }
 
-.boton_borrar{
-    @extend .b;
-    background-color: $color-gris;
-    color: white;
-    &:hover{
-        border: 2px solid black;
-    }
-}

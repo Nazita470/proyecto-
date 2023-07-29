@@ -32,6 +32,10 @@
   height: 80vh;
 }
 
+.alto_70vh {
+  height: 70vh;
+}
+
 .colorBorde-Gris {
   border-color: rgb(183, 178, 178);
   background-color: #e8e5e5;
@@ -65,7 +69,7 @@
 
 .div_imagen {
   height: 600px;
-  background-image: url("../Assets/img/Fondo.jpg");
+  background-image: url("../Assets/img/Fondo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -184,6 +188,11 @@
   font-size: 40px;
 }
 
+@media only screen and (min-width: 600px) {
+  .div_imagen {
+    background-image: url("../Assets/img/Fondo.jpg");
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .seccion_checkBox {
     margin-bottom: 20px;
@@ -233,32 +242,35 @@
 }
 
 .input {
-  height: 50px;
+  height: 40px;
 }
 
 .textarea {
   height: 200px;
 }
 
-.b, .boton_borrar, .boton_enviar {
+.b, .div-botones-contacto .boton_borrar, .div-botones-contacto .boton_enviar {
   height: 30px;
+  width: 200px;
 }
 
-.boton_enviar {
+.div-botones-contacto {
+  padding: 0 30%;
+}
+.div-botones-contacto .boton_enviar {
   background-color: white;
   color: black;
 }
-.boton_enviar:hover {
+.div-botones-contacto .boton_enviar:hover {
   color: white;
   border: 2px solid black;
   background-color: red;
 }
-
-.boton_borrar {
+.div-botones-contacto .boton_borrar {
   background-color: rgb(183, 178, 178);
   color: white;
 }
-.boton_borrar:hover {
+.div-botones-contacto .boton_borrar:hover {
   border: 2px solid black;
 }
 
@@ -286,8 +298,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.carousel-item {
+.carousel {
   height: 70vh;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+  height: inherit;
 }
 
 .ancla_prop {
@@ -321,19 +339,14 @@
   font-size: 30px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 900px) {
-  .carousel-item {
-    height: 50vh;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .carousel-item {
+@media only screen and (min-width: 0px) and (max-width: 950px) {
+  .carousel {
     height: 40vh;
   }
 }
-@media only screen and (max-width: 600px) {
-  .carousel-item {
-    height: 30vh;
+@media only screen and (max-width: 750px) {
+  .carousel {
+    height: 35vh;
   }
 }
 footer {
