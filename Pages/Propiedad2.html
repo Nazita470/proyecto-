@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="../fabicon (2).ico" type="image/x.icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     
     <script src="https://kit.fontawesome.com/fa3a0fd4c5.js" crossorigin="anonymous"></script>
@@ -43,6 +44,7 @@
     
     <main class="container ">  
         <section class="row">
+             <!--Carusel-->
             <section class="col-12">
 
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -54,7 +56,7 @@
                         <img  srcset="../Assets/img/bedroom-2.jpg 650w , ../Assets/img/bedroom-2-desktop.jpg 1000w" src="../Assets/img/bedroom-2.jpg"  class="d-block w-100 object-fit-cover" alt="Imagen del dormitorio de la casa">
                       </div>
                       <div class="carousel-item ">
-                        <img srcset="../Assets/img/patio-1.jpg 650w, ../Assets/img/patio-1-desktop.jpg 1000w"  src="../Assets/img/patio-1.jpg"  class="d-block w-100 " alt="Imagen del patio">
+                        <img srcset="../Assets/img/patio-2.jpg 650w, ../Assets/img/patio-2-desktop.jpg 1000w"  src="../Assets/img/patio-2.jpg"  class="d-block w-100 " alt="Imagen del patio">
                       </div>
                     </div>
 
@@ -70,6 +72,7 @@
                    
             </section>
 
+            <!--Guia-->
             <div class="text-center mt-2 mb-2">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -79,6 +82,7 @@
                   </nav>
             </div>
 
+             <!--Info propiedad-->
             <div class="col-12 h-auto position-relative border border-1 colorBorde-Gris  border-radius-20 mt-3 mb-3">
     
                 <div class="position-absolute  end-0 m-3">
@@ -100,7 +104,8 @@
                 
             </div>
 
-            <section class="row mt-3 mb-3 d-flex flex-lg-row flex-column justify-content-center">
+             <!--Consulta-->
+            <section data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="row mt-3 mb-3 d-flex flex-lg-row flex-column justify-content-center">
 
                 
                 <div class="col-lg-8 col-12">
@@ -149,7 +154,8 @@
    
             </section>
 
-            <div class="col-12 mt-3 mb-3">
+           <!--Mapa-->
+            <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="col-12 mt-3 mb-3">
                 <h2 class="h2_seccion_mapa_propiedad text-start">Ubicación</h2>
                 <div>
                     <iframe class="w-100 border-radius-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.9649259438424!2d-64.26580851191815!3d-27.78005486846963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b523e04d78813%3A0xe658891bcd182382!2sAv.%20Roca%20Sur%20145%2C%20G4200LYG%20Santiago%20del%20Estero!5e0!3m2!1ses!2sar!4v1689605480759!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -163,7 +169,7 @@
 
     <footer class="d-flex  position-relative bottom-0 justify-content-evenly p-3">   
         <section class="d-inline-flex flex-column justify-content-evenly">
-           <h3 class="h3_Footer fw-bolder">Mapa de sitio</h3>
+           <h3 class="h3_Footer">Mapa de sitio</h3>
             <nav>
                 <ul class="list-unstyled">
                     <li><a href="../index.html"  class="text-decoration-none ancla_footer">Inicio</a></li>
@@ -178,11 +184,10 @@
         <section class="d-flex flex-column mt-1 ms-2">
             <div class="titulo_contacto_footer">
                 <h3 class="h3_Footer">Contacto</h3>
-                <h4 class="h4_contacto_footer fw-bold">Escríbenos a @inmobiliaria_sal</h3>
+                <h4 class="h4_Footer">Escríbenos a @inmobiliaria_sal</h3>
             </div>
 
             <div>
-                <h3 class="h3_footer mt-2 mb-3">Síguenos</h3> 
                 <div class="d-flex justify-content-evenly mt-2">                
                     <a href="https://www.facebook.com/inmosalvatierra" target="_blank" class="text-dark">
                         <i class="fab fa-facebook-square fa-2xl"></i>
@@ -213,5 +218,9 @@
     </footer>
 
     <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

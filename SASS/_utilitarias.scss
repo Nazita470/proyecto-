@@ -46,3 +46,35 @@
 .object-fit-cover{
     object-fit: cover;
 }
+
+.boton_con_animacion{
+    font-family: $letra-secundaria;
+    border: 2px solid gray;
+    position: relative;
+    text-decoration: none;
+    color: black;
+
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        transition: all .3s ease-in;
+    }
+    &::before{
+        top: -10px;
+        left: -10px;
+        border: inherit;
+        border-width: 3px 0 0 3px;
+     }
+    &::after{
+        bottom: -10px;
+        right: -10px;
+        border: inherit;
+        border-width: 0 3px 3px 0;
+     }
+     &:hover::before, &:hover::after{
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+     }
+  }

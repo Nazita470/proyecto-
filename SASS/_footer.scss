@@ -1,8 +1,15 @@
 footer{
     background-color: $color-footer;
-    .h3_Footer{
+
+    .h3_Footer , .h4_Footer{
         font-size: $size-mediano;
+       
         font-family: 'Quicksand', sans-serif;
+    }
+
+    .h4_Footer{
+        font-family: 'Quicksand', sans-serif;
+        font-size: $size-chico;
     }
     nav{
         .ancla_footer{
@@ -32,7 +39,7 @@ footer{
     }
 
     @media only screen and (max-width:600px){
-        .h3_Footer{
+        .h3_Footer .h4_Footer{
             font-size: 25px;
         
        } 

@@ -53,6 +53,41 @@
   color: red;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.boton_con_animacion, .div_prop .reservar {
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid gray;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.boton_con_animacion::before, .div_prop .reservar::before, .boton_con_animacion::after, .div_prop .reservar::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in;
+}
+.boton_con_animacion::before, .div_prop .reservar::before {
+  top: -10px;
+  left: -10px;
+  border: inherit;
+  border-width: 3px 0 0 3px;
+}
+.boton_con_animacion::after, .div_prop .reservar::after {
+  bottom: -10px;
+  right: -10px;
+  border: inherit;
+  border-width: 0 3px 3px 0;
+}
+.boton_con_animacion:hover::before, .div_prop .reservar:hover::before, .boton_con_animacion:hover::after, .div_prop .reservar:hover::after {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+}
+
 @keyframes boton {
   100% {
     border: 1px solid black;
@@ -91,13 +126,13 @@
   background-color: rgb(255, 40, 40);
 }
 .div_imagen .boton_buscar {
-  background-color: rgb(183, 178, 178);
+  background-color: rgb(219, 219, 219);
   color: black;
   width: 100px;
 }
 .div_imagen .boton_buscar:hover {
   border: 2px solid black;
-  color: white;
+  text-decoration: underline;
 }
 
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
@@ -126,34 +161,7 @@
   object-fit: cover;
 }
 .div_prop .reservar {
-  font-family: "Montserrat", sans-serif;
   border: 2px solid gray;
-  position: relative;
-  text-decoration: none;
-  color: black;
-}
-.div_prop .reservar::before, .div_prop .reservar::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  transition: all 0.3s ease-in;
-}
-.div_prop .reservar::before {
-  top: -10px;
-  left: -10px;
-  border: inherit;
-  border-width: 3px 0 0 3px;
-}
-.div_prop .reservar::after {
-  bottom: -10px;
-  right: -10px;
-  border: inherit;
-  border-width: 0 3px 3px 0;
-}
-.div_prop .reservar:hover::before, .div_prop .reservar:hover::after {
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
 }
 
 /*mapa del index*/
@@ -352,9 +360,13 @@
 footer {
   background-color: #f8f9fa;
 }
-footer .h3_Footer {
+footer .h3_Footer, footer .h4_Footer {
   font-size: 30px;
   font-family: "Quicksand", sans-serif;
+}
+footer .h4_Footer {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
 }
 footer nav .ancla_footer {
   color: black;
@@ -377,7 +389,7 @@ footer a .fa-whatsapp-square {
   color: #075E54;
 }
 @media only screen and (max-width: 600px) {
-  footer .h3_Footer {
+  footer .h3_Footer .h4_Footer {
     font-size: 25px;
   }
 }/*# sourceMappingURL=estilos.css.map */
