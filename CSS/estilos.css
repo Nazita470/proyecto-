@@ -107,9 +107,11 @@
   background-image: url("../Assets/img/Fondo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  /*check box*/
+  background-size: cover; /*check box*/
   /*Boton buscar*/
+}
+.div_imagen .form-select {
+  min-width: 153px;
 }
 .div_imagen .boton_check {
   font-size: 20px;
@@ -126,9 +128,11 @@
   background-color: rgb(255, 40, 40);
 }
 .div_imagen .boton_buscar {
+  text-align: center;
   background-color: rgb(219, 219, 219);
   color: black;
   width: 100px;
+  border: 1px solid gray;
 }
 .div_imagen .boton_buscar:hover {
   border: 2px solid black;
@@ -211,6 +215,17 @@
     font-size: 2rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .cuadro_deConsulta_index .contenedor_info_index {
+    width: 100%;
+  }
+  .cuadro_deConsulta_index .contenedor_redes_index {
+    width: 100%;
+  }
+  .cuadro_deConsulta_index .div_consulta_propiedad {
+    width: 100%;
+  }
+}
 .main_SobreNos {
   min-height: 70vh;
 }
@@ -260,6 +275,7 @@
 .b, .div-botones-contacto .boton_borrar, .div-botones-contacto .boton_enviar {
   height: 30px;
   width: 200px;
+  min-width: 100px;
 }
 
 .div-botones-contacto {
@@ -315,12 +331,20 @@
 .carousel .carousel-inner .carousel-item {
   height: inherit;
 }
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
 
 .ancla_prop {
   color: rgb(244, 26, 26);
 }
 .ancla_prop:hover {
   color: rgb(244, 26, 26);
+}
+
+.dropdown-toggle::after {
+  content: none;
 }
 
 .divTitulo_datos_propiedad {
@@ -355,6 +379,18 @@
 @media only screen and (max-width: 750px) {
   .carousel {
     height: 35vh;
+  }
+}
+.main-404 {
+  overflow: hidden;
+}
+.main-404 .div-404 {
+  min-height: 640px;
+}
+
+@media only screen and (max-width: 550px) {
+  .main-404 .div-404 {
+    min-height: 550px;
   }
 }
 footer {

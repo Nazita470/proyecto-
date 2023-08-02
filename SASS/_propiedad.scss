@@ -4,6 +4,10 @@
         height: 100%;
         .carousel-item{
             height: inherit;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
     }
     
@@ -16,6 +20,14 @@
         color: $color-botones-anclas;
     }
 }
+     
+    .dropdown-toggle{
+    &::after{
+    content: none;
+    }
+  }
+
+
 
 .divTitulo_datos_propiedad{
     margin: 20px;

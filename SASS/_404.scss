@@ -1,0 +1,14 @@
+.main-404{
+    overflow: hidden;
+    .div-404{
+        min-height: 640px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .main-404{
+        .div-404{
+            min-height: 550px;
+        }
+    }
+}

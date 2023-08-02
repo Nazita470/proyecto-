@@ -3,6 +3,9 @@
     background-image: url("../Assets/img/Fondo-mobile.jpg");
     @include img-fondo(no-repeat, center, cover);
 
+    .form-select{
+            min-width: 153px;
+    }
     /*check box*/
     .boton_check{
         font-size: $size-chico;
@@ -22,10 +25,11 @@
      /*Boton buscar*/
 
     .boton_buscar{
-        
+        text-align: center;
         background-color: rgb(219, 219, 219);
         color: black;
         width: 100px;
+        border: 1px solid gray;
          &:hover{
              border: $border-hover-negro;
              text-decoration: underline;
@@ -122,4 +126,19 @@
     .titulo_mapa{
        font-size: 2rem;
     }
+}
+
+@media only screen and (max-width: 400px) {
+    .cuadro_deConsulta_index{
+        .contenedor_info_index{
+            width: 100%;
+        }
+        .contenedor_redes_index{
+            width: 100%;
+        }
+        .div_consulta_propiedad{
+            width: 100%;
+        }
+    }
+    
 }

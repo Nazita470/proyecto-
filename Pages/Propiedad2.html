@@ -7,12 +7,13 @@
     <meta name="keywords" content="Casa en alquiler">
     <title>Casa en alquiler | Inmosalvatierra</title>
     
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    
     <link rel="shortcut icon" href="../fabicon (2).ico" type="image/x.icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
     
     <script src="https://kit.fontawesome.com/fa3a0fd4c5.js" crossorigin="anonymous"></script>
 </head>
@@ -84,9 +85,44 @@
 
              <!--Info propiedad-->
             <div class="col-12 h-auto position-relative border border-1 colorBorde-Gris  border-radius-20 mt-3 mb-3">
-    
+
+                <!--Compartir-->
                 <div class="position-absolute  end-0 m-3">
-                    <i class="fas fa-share-alt-square fa-2xl"></i>
+                    
+                    <nav>
+                        <ul>
+                            <li class="nav-item dropdown list-unstyled">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <i class="fas fa-share-alt-square fa-2xl"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" target="_blank" 
+                                        href="#">
+                                        <i class="fab fa-whatsapp"></i> <span class="ms-2">Whatsapp</span>
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" target="_blank"
+                                         href="#">
+                                         <i class="fab fa-instagram"></i> <span class="ms-2">Instagram</span>
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" target="_blank" 
+                                        href="#">
+                                        <i class="fab fa-facebook-f"></i> <span class="ms-2">Facebook</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
                 <div class="divTitulo_datos_propiedad">
@@ -126,7 +162,7 @@
                 <div class="col-lg-4 mb-3 col-md-8 col-12 align-self-center">
                     <div class="w-100 border border-1 border-dark text-center border-radius-20 div_consulta_propiedad">
     
-                        <form action="" class="container-md pt-2 pb-2">
+                        <form action="./404.html" class="container-md pt-2 pb-2">
                              <h3 class="h3_consulta_propiedad_formulario fw-bold text-dark text-center mt-3">Contacta a la inmobiliaria</h3>
         
                             <div class="mb-3 mt-5">
@@ -181,7 +217,7 @@
             </nav>
         </section>
 
-        <section class="d-flex flex-column mt-1 ms-2">
+        <section class="d-flex flex-column mt-1  ms-5">
             <div class="titulo_contacto_footer">
                 <h3 class="h3_Footer">Contacto</h3>
                 <h4 class="h4_Footer">Escríbenos a @inmobiliaria_sal</h3>
