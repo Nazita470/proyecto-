@@ -173,36 +173,36 @@
   font-size: 40px;
 }
 
-.cuadro_deConsulta_index {
+.seccion-info .cuadro_deConsulta_index {
   border: 1px solid rgb(128, 128, 128);
+  z-index: 10;
 }
-.cuadro_deConsulta_index .contenedor_info_index {
+.seccion-info .cuadro_deConsulta_index .contenedor_info_index {
   background-color: rgba(221, 221, 221, 0.905);
   border-color: black;
 }
-.cuadro_deConsulta_index .contenedor_info_index:hover {
+.seccion-info .cuadro_deConsulta_index .contenedor_info_index:hover {
   border: 2px solid red;
   background-color: rgb(183, 178, 178);
 }
-.cuadro_deConsulta_index .contenedor_redes_index {
+.seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
   display: flex;
 }
-.cuadro_deConsulta_index .contenedor_redes_index .ri-instagram-line {
+.seccion-info .cuadro_deConsulta_index .contenedor_redes_index .ri-instagram-line {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
 }
-.cuadro_deConsulta_index .contenedor_redes_index .fa-facebook {
+.seccion-info .cuadro_deConsulta_index .contenedor_redes_index .fa-facebook {
   color: #3b5998;
   font-size: 40px;
 }
-.cuadro_deConsulta_index .contenedor_redes_index .fa-whatsapp {
+.seccion-info .cuadro_deConsulta_index .contenedor_redes_index .fa-whatsapp {
   color: #075E54;
   font-size: 40px;
 }
-
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .seccion_checkBox {
     margin-bottom: 20px;
@@ -212,7 +212,7 @@
   .informacion-inmo {
     padding: 0;
   }
-  .cuadro_deConsulta_index .contenedor_redes_index {
+  .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
     display: none;
   }
 }
@@ -227,13 +227,13 @@
   }
 }
 @media only screen and (max-width: 400px) {
-  .cuadro_deConsulta_index .contenedor_info_index {
+  .seccion-info .cuadro_deConsulta_index .contenedor_info_index {
     width: 100%;
   }
-  .cuadro_deConsulta_index .contenedor_redes_index {
+  .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
     width: 100%;
   }
-  .cuadro_deConsulta_index .div_consulta_propiedad {
+  .seccion-info .cuadro_deConsulta_index .div_consulta_propiedad {
     width: 100%;
   }
 }
@@ -401,12 +401,12 @@
   overflow: hidden;
 }
 .main-404 .div-404 {
-  min-height: 640px;
+  min-height: 70vh;
 }
 
 @media only screen and (max-width: 550px) {
   .main-404 .div-404 {
-    min-height: 550px;
+    min-height: 70vh;
   }
 }
 footer {

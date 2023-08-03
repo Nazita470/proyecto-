@@ -81,35 +81,46 @@
     font-size: $size-titulos;
 }
 
-.cuadro_deConsulta_index{
-    border: $borde-claro;
-    .contenedor_info_index{  
-        background-color: rgba(221, 221, 221, 0.905);
-        border-color: black;
-        &:hover{
-            border: $border-hover-rojo;
-             background-color: $color-gris;
+.seccion-info{
+    
+    
+    .cuadro_deConsulta_index{
+        border: $borde-claro;
+       
+        z-index: 10;
+        .contenedor_info_index{  
+            background-color: rgba(221, 221, 221, 0.905);
+           
+            border-color: black;
+            &:hover{
+                border: $border-hover-rojo;
+                 background-color: $color-gris;
+            }
         }
-    }
-    .contenedor_redes_index{
-        display: flex;
-        .ri-instagram-line{
-            background: map-get($colores_redes, instagram);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 40px;
+        .contenedor_redes_index{
+            display: flex;
+            .ri-instagram-line{
+                background: map-get($colores_redes, instagram);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 40px;
+            }
+            .fa-facebook{
+                color: map-get($colores_redes, facebook);
+                font-size: 40px;
+            }
+            .fa-whatsapp{
+                color: map-get($colores_redes, whatsapp);
+                font-size: 40px;
+            }
         }
-        .fa-facebook{
-            color: map-get($colores_redes, facebook);
-            font-size: 40px;
+        .div_consulta_propiedad{
+            
         }
-        .fa-whatsapp{
-            color: map-get($colores_redes, whatsapp);
-            font-size: 40px;
-        }
-    }
-  }
+      }
+}
+
 
   @media only screen and (min-width: 0px) and (max-width: 900px){
     .seccion_checkBox{
@@ -124,11 +135,13 @@
         padding: 0;
         }
 
-        .cuadro_deConsulta_index{
-            .contenedor_redes_index{
-                display: none;
+        .seccion-info{
+            .cuadro_deConsulta_index{
+                .contenedor_redes_index{
+                    display: none;
+                }
             }
-        }
+        }    
 }
 
 
@@ -151,17 +164,20 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .cuadro_deConsulta_index{
-        .contenedor_info_index{
-            width: 100%;
-        }
-        .contenedor_redes_index{
-            width: 100%;
-        }
-        .div_consulta_propiedad{
-            width: 100%;
+    .seccion-info{
+        .cuadro_deConsulta_index{
+            .contenedor_info_index{
+                width: 100%;
+            }
+            .contenedor_redes_index{
+                width: 100%;
+            }
+            .div_consulta_propiedad{
+                width: 100%;
+            }
         }
     }
+   
     
 }
 
