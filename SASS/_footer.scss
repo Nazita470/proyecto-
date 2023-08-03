@@ -1,7 +1,7 @@
 footer{
     background-color: $color-footer;
 
-    .h3_Footer , .h4_Footer{
+    .h3_Footer{
         font-size: $size-mediano;
        
         font-family: 'Quicksand', sans-serif;
@@ -39,10 +39,22 @@ footer{
     }
 
     @media only screen and (max-width:600px){
-        .h3_Footer .h4_Footer{
-            font-size: 25px;
-        
-       } 
+        .h3_Footer  {
+            font-size: 20px;
+       }
+       
+       .h4_Footer{
+        display: none;
+       }
+
+       nav{
+        .ancla_footer{
+            font-size: 16px;
+            &:hover{
+                color: $color-botones-anclas;
+            }
+        } 
+    }
 
       
     } 

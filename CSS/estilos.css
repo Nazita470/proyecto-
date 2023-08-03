@@ -184,6 +184,9 @@
   border: 2px solid red;
   background-color: rgb(183, 178, 178);
 }
+.cuadro_deConsulta_index .contenedor_redes_index {
+  display: flex;
+}
 .cuadro_deConsulta_index .contenedor_redes_index .ri-instagram-line {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
@@ -200,14 +203,22 @@
   font-size: 40px;
 }
 
-@media only screen and (min-width: 600px) {
-  .div_imagen {
-    background-image: url("../Assets/img/Fondo.jpg");
-  }
-}
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .seccion_checkBox {
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 750px) {
+  .informacion-inmo {
+    padding: 0;
+  }
+  .cuadro_deConsulta_index .contenedor_redes_index {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .div_imagen {
+    background-image: url("../Assets/img/Fondo.jpg");
   }
 }
 @media only screen and (max-width: 600px) {
@@ -381,6 +392,11 @@
     height: 35vh;
   }
 }
+@media only screen and (max-width: 600px) {
+  .divTitulo_datos_propiedad .divTitulo_h1_datos_propiedad {
+    font-size: 25px;
+  }
+}
 .main-404 {
   overflow: hidden;
 }
@@ -394,9 +410,9 @@
   }
 }
 footer {
-  background-color: #f8f9fa;
+  background-color: rgb(207, 205, 205);
 }
-footer .h3_Footer, footer .h4_Footer {
+footer .h3_Footer {
   font-size: 30px;
   font-family: "Quicksand", sans-serif;
 }
@@ -425,7 +441,16 @@ footer a .fa-whatsapp-square {
   color: #075E54;
 }
 @media only screen and (max-width: 600px) {
-  footer .h3_Footer .h4_Footer {
-    font-size: 25px;
+  footer .h3_Footer {
+    font-size: 20px;
+  }
+  footer .h4_Footer {
+    display: none;
+  }
+  footer nav .ancla_footer {
+    font-size: 16px;
+  }
+  footer nav .ancla_footer:hover {
+    color: rgb(244, 26, 26);
   }
 }/*# sourceMappingURL=estilos.css.map */

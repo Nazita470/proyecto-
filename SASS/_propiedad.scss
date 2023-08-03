@@ -21,7 +21,7 @@
     }
 }
      
-    .dropdown-toggle{
+.dropdown-toggle{
     &::after{
     content: none;
     }
@@ -70,4 +70,13 @@
     .carousel{
         height: 35vh;
     }
-}    
+}   
+
+@media only screen and (max-width: 600px){
+    .divTitulo_datos_propiedad{
+        .divTitulo_h1_datos_propiedad{
+            font-size: 25px;
+        }
+    }
+    
+}
