@@ -1,182 +1,260 @@
-.div_imagen{
-    height: 600px;
-    background-image: url("../Assets/img/Fondo-mobile.jpg");
-    @include img-fondo(no-repeat, center, cover);
+.main-index{
+    overflow: hidden;
+    .div_imagen{
+        height: 600px;
+        background-image: url("../Assets/img/Fondo.jpg");
+        @include img-fondo(no-repeat, center, cover);
+        position: relative;
 
-    .form-select{
-            min-width: 153px;
+        h1{
+            color: white;
+            font-size: 50px;
+            margin-bottom: 50px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-family: $letra-titulos;
+        }
+
+
+        .div-img-index{
+            position: absolute;
+            bottom: 0;
+            img{
+                color: transparent;
+                opacity: 0.5;
+            }
+        }
     }
-    /*check box*/
-    .boton_check{
-        font-size: $size-chico;
-        border: $borde-claro;
-        background-color: white;
-        color: black;
-        &:hover{
-            border: $border-hover-rojo;
+        /*check box*/
+        .boton_check{
+            font-size: $size-chico;
+            border: none;
             background-color: white;
             color: black;
-        }
-        &:checked{
-            background-color:  rgb(255, 40, 40);
-        }
-    }
-
-     /*Boton buscar*/
-
-    .boton_buscar{
-        text-align: center;
-        background-color: rgb(219, 219, 219);
-        color: black;
-        width: 100px;
-        border: 1px solid gray;
-         &:hover{
-             border: $border-hover-negro;
-             text-decoration: underline;
-        }
-
-    }
-}
-
-.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: $color-inmobiliaria;
-    border-color: #51585e;
-  }
-
-
-/*titulos propiedades index*/
-
-.h1_prop{
-    font-size: $size-titulos;
-    font-family: $letra-titulos;
-}
-
-.h2_prop{
-    font-family: $letra-titulos;
-}
-
-/*tarjetas propiedades*/
-
-.div_prop{
-    @include size(350px, 500px);
-
-    .propiedad1{
-        object-fit: cover;
-    }
-
-    /*boton en propiedades*/
-    .reservar{
-        @extend .boton_con_animacion;
-        border: 2px solid gray;
-      }
-    }
-
-
-
-
-
-/*mapa del index*/
-.titulo_mapa{
-    font-size: $size-titulos;
-}
-
-.seccion-info{
-    
-    
-    .cuadro_deConsulta_index{
-        border: $borde-claro;
-       
-        z-index: 10;
-        .contenedor_info_index{  
-            background-color: rgba(221, 221, 221, 0.905);
-           
-            border-color: black;
             &:hover{
                 border: $border-hover-rojo;
-                 background-color: $color-gris;
+                background-color: white;
+                color: black;
+            }
+            &:checked{
+                background-color:  rgb(255, 40, 40);
             }
         }
-        .contenedor_redes_index{
-            display: flex;
-            .ri-instagram-line{
-                background: map-get($colores_redes, instagram);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-size: 40px;
-            }
-            .fa-facebook{
-                color: map-get($colores_redes, facebook);
-                font-size: 40px;
-            }
-            .fa-whatsapp{
-                color: map-get($colores_redes, whatsapp);
-                font-size: 40px;
+
+        .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+            color: #fff;
+            background-color: $color-inmobiliaria;
+            border-color: #51585e;
+          }
+        
+        .div-contenedor-selector{
+            .contenedor-selector{
+                .div-options{
+                    margin-top: 17px;
+                    .form-select{
+                        min-width: 153px;
+                        padding: 10px;
+        
+                    }
+                }
             }
         }
-        .div_consulta_propiedad{
-            
+       
+        
+        
+        
+    
+         /*Boton buscar*/
+    
+        .boton_buscar{
+            text-align: center;
+            background-color: rgb(219, 219, 219);
+            color: black;
+            width: 100px;
+            border: 1px solid gray;
+             &:hover{
+                 border: $border-hover-negro;
+                 text-decoration: underline;
+            }
+    
         }
-      }
+    
+    
+    
+    
+    
+    /*titulos propiedades index*/
+    
+    .h2_prop{
+        font-size: $size-titulos;
+        font-family: $letra-titulos;
+    }
+    
+    .h2_prop{
+        font-family: $letra-titulos;
+    }
+    
+    /*tarjetas propiedades*/
+    
+    .div_prop{
+        @include size(350px, 500px);
+    
+        .propiedad1{
+            object-fit: cover;
+        }
+    
+        /*boton en propiedades*/
+        .reservar{
+            @extend .boton_con_animacion;
+            border: 2px solid gray;
+          }
+        }
+    
+    
+    
+    
+    
+    /*mapa del index*/
+    .titulo_mapa{
+        font-size: $size-titulos;
+    }
+    
+    .seccion-info{
+        
+        
+        .cuadro_deConsulta_index{
+            border: $borde-claro;
+           
+            z-index: 10;
+            .contenedor_info_index{  
+                background-color: rgba(221, 221, 221, 0.905);
+               
+                border-color: black;
+                &:hover{
+                    border: $border-hover-rojo;
+                     background-color: $color-gris;
+                }
+            }
+            .contenedor_redes_index{
+                display: flex;
+                .ri-instagram-line{
+                    background: map-get($colores_redes, instagram);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 40px;
+                }
+                .fa-facebook{
+                    color: map-get($colores_redes, facebook);
+                    font-size: 40px;
+                }
+                .fa-whatsapp{
+                    color: map-get($colores_redes, whatsapp);
+                    font-size: 40px;
+                }
+            }
+          }
+    }
+
 }
 
 
-  @media only screen and (min-width: 0px) and (max-width: 900px){
-    .seccion_checkBox{
-        margin-bottom: 20px;
-    }
 
+@media only screen and (min-width: 0px) and (max-width: 900px){
+    .main-index{
+        .seccion_checkBox{
+            margin-bottom: 20px;
+        }
+    }
     
 }  
 
-  @media only screen and (max-width: 950px) and (min-width: 750px){
+@media only screen and (max-width: 950px) and (min-width: 750px){
+    .main-index{
         .informacion-inmo{
-        padding: 0;
-        }
-
-        .seccion-info{
-            .cuadro_deConsulta_index{
-                .contenedor_redes_index{
-                    display: none;
-                }
+            padding: 0;
             }
-        }    
+    
+            .seccion-info{
+                .cuadro_deConsulta_index{
+                    .contenedor_redes_index{
+                        display: none;
+                    }
+                }
+            }    
+    }
+       
 }
 
+@media only screen and (max-width: 768px) {
+    .main-index{
+        .div-contenedor-selector{
+            padding: 0;
+            align-self: center;
+            .contenedor-selector{
+                margin: 0;
+           
+            }
+        }
 
-  
-  
-  @media only screen and (min-width: 600px){
-    .div_imagen{
-        background-image: url("../Assets/img/Fondo.jpg");
+    
+        .boton_buscar{
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .div-img-index{
+            display: none;
+        }
     }
-
-
-  }
-
-
+   
+}
 
 @media only screen and (max-width: 600px){
-    .titulo_mapa{
-       font-size: 2rem;
+    .main-index{
+        .div_imagen{
+            background-image: url("../Assets/img/Fondo-mobile.jpg");
+        }
+
+        .titulo_mapa{
+            font-size: 2rem;
+         }
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .main-index{
+        .div_imagen{
+            h1{
+             font-size: 35px;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .seccion-info{
-        .cuadro_deConsulta_index{
-            .contenedor_info_index{
-                width: 100%;
-            }
-            .contenedor_redes_index{
-                width: 100%;
-            }
-            .div_consulta_propiedad{
-                width: 100%;
+    .main-index{
+        .boton_check{
+            font-size: 16px;
+        }
+
+        .seccion-info{
+            .cuadro_deConsulta_index{
+                .contenedor_info_index{
+                    width: 100%;
+                }
+                .contenedor_redes_index{
+                    width: 100%;
+                }
+                .div_consulta_propiedad{
+                    width: 100%;
+                }
             }
         }
     }
+    
+
+    
    
     
 }

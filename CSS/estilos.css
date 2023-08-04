@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Sono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@300&family=Roboto+Condensed:ital@1&family=Sono&family=Ubuntu:ital,wght@1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -57,35 +58,41 @@
   object-fit: cover;
 }
 
-.boton_con_animacion, .div_prop .reservar {
+.boton_con_animacion, .main-index .div_prop .reservar {
   font-family: "Montserrat", sans-serif;
   border: 2px solid gray;
   position: relative;
   text-decoration: none;
   color: black;
 }
-.boton_con_animacion::before, .div_prop .reservar::before, .boton_con_animacion::after, .div_prop .reservar::after {
+.boton_con_animacion::before, .main-index .div_prop .reservar::before, .boton_con_animacion::after, .main-index .div_prop .reservar::after {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
   transition: all 0.3s ease-in;
 }
-.boton_con_animacion::before, .div_prop .reservar::before {
+.boton_con_animacion::before, .main-index .div_prop .reservar::before {
   top: -10px;
   left: -10px;
   border: inherit;
   border-width: 3px 0 0 3px;
 }
-.boton_con_animacion::after, .div_prop .reservar::after {
+.boton_con_animacion::after, .main-index .div_prop .reservar::after {
   bottom: -10px;
   right: -10px;
   border: inherit;
   border-width: 0 3px 3px 0;
 }
-.boton_con_animacion:hover::before, .div_prop .reservar:hover::before, .boton_con_animacion:hover::after, .div_prop .reservar:hover::after {
+.boton_con_animacion:hover::before, .main-index .div_prop .reservar:hover::before, .boton_con_animacion:hover::after, .main-index .div_prop .reservar:hover::after {
   width: calc(100% + 20px);
   height: calc(100% + 20px);
+}
+
+.bordeado {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 @keyframes boton {
@@ -102,138 +109,179 @@
   color: red;
 }
 
-.div_imagen {
+.main-index {
+  overflow: hidden;
+  /*check box*/
+  /*Boton buscar*/
+  /*titulos propiedades index*/
+  /*tarjetas propiedades*/
+  /*mapa del index*/
+}
+.main-index .div_imagen {
   height: 600px;
-  background-image: url("../Assets/img/Fondo-mobile.jpg");
+  background-image: url("../Assets/img/Fondo.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /*check box*/
-  /*Boton buscar*/
+  background-size: cover;
+  position: relative;
 }
-.div_imagen .form-select {
-  min-width: 153px;
+.main-index .div_imagen h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-family: "Ubuntu", sans-serif;
 }
-.div_imagen .boton_check {
+.main-index .div_imagen .div-img-index {
+  position: absolute;
+  bottom: 0;
+}
+.main-index .div_imagen .div-img-index img {
+  color: transparent;
+  opacity: 0.5;
+}
+.main-index .boton_check {
   font-size: 20px;
-  border: 1px solid rgb(128, 128, 128);
+  border: none;
   background-color: white;
   color: black;
 }
-.div_imagen .boton_check:hover {
+.main-index .boton_check:hover {
   border: 2px solid red;
   background-color: white;
   color: black;
 }
-.div_imagen .boton_check:checked {
+.main-index .boton_check:checked {
   background-color: rgb(255, 40, 40);
 }
-.div_imagen .boton_buscar {
+.main-index .btn-check:checked + .btn-secondary, .main-index .btn-check:active + .btn-secondary, .main-index .btn-secondary:active, .main-index .btn-secondary.active, .main-index .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: red;
+  border-color: #51585e;
+}
+.main-index .div-contenedor-selector .contenedor-selector .div-options {
+  margin-top: 17px;
+}
+.main-index .div-contenedor-selector .contenedor-selector .div-options .form-select {
+  min-width: 153px;
+  padding: 10px;
+}
+.main-index .boton_buscar {
   text-align: center;
   background-color: rgb(219, 219, 219);
   color: black;
   width: 100px;
   border: 1px solid gray;
 }
-.div_imagen .boton_buscar:hover {
+.main-index .boton_buscar:hover {
   border: 2px solid black;
   text-decoration: underline;
 }
-
-.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: red;
-  border-color: #51585e;
-}
-
-/*titulos propiedades index*/
-.h1_prop {
+.main-index .h2_prop {
   font-size: 40px;
   font-family: "Ubuntu", sans-serif;
 }
-
-.h2_prop {
+.main-index .h2_prop {
   font-family: "Ubuntu", sans-serif;
 }
-
-/*tarjetas propiedades*/
-.div_prop {
+.main-index .div_prop {
   height: 500px;
   width: 350px;
   /*boton en propiedades*/
 }
-.div_prop .propiedad1 {
+.main-index .div_prop .propiedad1 {
   object-fit: cover;
 }
-.div_prop .reservar {
+.main-index .div_prop .reservar {
   border: 2px solid gray;
 }
-
-/*mapa del index*/
-.titulo_mapa {
+.main-index .titulo_mapa {
   font-size: 40px;
 }
-
-.seccion-info .cuadro_deConsulta_index {
+.main-index .seccion-info .cuadro_deConsulta_index {
   border: 1px solid rgb(128, 128, 128);
   z-index: 10;
 }
-.seccion-info .cuadro_deConsulta_index .contenedor_info_index {
+.main-index .seccion-info .cuadro_deConsulta_index .contenedor_info_index {
   background-color: rgba(221, 221, 221, 0.905);
   border-color: black;
 }
-.seccion-info .cuadro_deConsulta_index .contenedor_info_index:hover {
+.main-index .seccion-info .cuadro_deConsulta_index .contenedor_info_index:hover {
   border: 2px solid red;
   background-color: rgb(183, 178, 178);
 }
-.seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
+.main-index .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
   display: flex;
 }
-.seccion-info .cuadro_deConsulta_index .contenedor_redes_index .ri-instagram-line {
+.main-index .seccion-info .cuadro_deConsulta_index .contenedor_redes_index .ri-instagram-line {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
 }
-.seccion-info .cuadro_deConsulta_index .contenedor_redes_index .fa-facebook {
+.main-index .seccion-info .cuadro_deConsulta_index .contenedor_redes_index .fa-facebook {
   color: #3b5998;
   font-size: 40px;
 }
-.seccion-info .cuadro_deConsulta_index .contenedor_redes_index .fa-whatsapp {
+.main-index .seccion-info .cuadro_deConsulta_index .contenedor_redes_index .fa-whatsapp {
   color: #075E54;
   font-size: 40px;
 }
+
 @media only screen and (min-width: 0px) and (max-width: 900px) {
-  .seccion_checkBox {
+  .main-index .seccion_checkBox {
     margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 950px) and (min-width: 750px) {
-  .informacion-inmo {
+  .main-index .informacion-inmo {
     padding: 0;
   }
-  .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
+  .main-index .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
     display: none;
   }
 }
-@media only screen and (min-width: 600px) {
-  .div_imagen {
-    background-image: url("../Assets/img/Fondo.jpg");
+@media only screen and (max-width: 768px) {
+  .main-index .div-contenedor-selector {
+    padding: 0;
+    align-self: center;
+  }
+  .main-index .div-contenedor-selector .contenedor-selector {
+    margin: 0;
+  }
+  .main-index .boton_buscar {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main-index .div-img-index {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  .titulo_mapa {
+  .main-index .div_imagen {
+    background-image: url("../Assets/img/Fondo-mobile.jpg");
+  }
+  .main-index .titulo_mapa {
     font-size: 2rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  .main-index .div_imagen h1 {
+    font-size: 35px;
+  }
+}
 @media only screen and (max-width: 400px) {
-  .seccion-info .cuadro_deConsulta_index .contenedor_info_index {
+  .main-index .boton_check {
+    font-size: 16px;
+  }
+  .main-index .seccion-info .cuadro_deConsulta_index .contenedor_info_index {
     width: 100%;
   }
-  .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
+  .main-index .seccion-info .cuadro_deConsulta_index .contenedor_redes_index {
     width: 100%;
   }
-  .seccion-info .cuadro_deConsulta_index .div_consulta_propiedad {
+  .main-index .seccion-info .cuadro_deConsulta_index .div_consulta_propiedad {
     width: 100%;
   }
 }
