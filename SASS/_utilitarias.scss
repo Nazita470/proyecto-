@@ -47,6 +47,10 @@
     object-fit: cover;
 }
 
+.over-flow-hidden{
+    overflow: hidden;
+}
+
 .boton_con_animacion{
     font-family: $letra-secundaria;
     border: 2px solid gray;
@@ -85,4 +89,73 @@
     padding: 20px;
   }
 
+  .h2_prop{
+    font-size: $size-titulos;
+    font-family: $letra-titulos;
+}
+
+.h2_prop{
+    font-family: $letra-titulos;
+}
+
+/*tarjetas propiedades*/
+
+.div_prop{
+    @include size(350px, 500px);
+    background-color: white;
+    a{
+        .propiedad1{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+
+    /*boton en propiedades*/
+    .reservar{
+        @extend .boton_con_animacion;
+        border: 2px solid gray;
+      }
+    }
+
+
+    /*Boton whatsapp*/
+    .icon-whatsapp{
+        bottom: 30px;
+        right: 30px;
+        z-index: 10;
+        .div-whatsapp{
+            width: 60px;
+            height: 60px;
+            background-color: map-get($colores_redes, whatsapp);
+            z-index: 1;
+            i{
+                font-size: 40px;
+                color: white;
+                z-index: 2;
+            }
+        }
+    }
+
   
+@media only screen and (max-width: 550px) {
+    .icon-whatsapp{
+        bottom: 20px;
+        right: 10px;
+        .div-whatsapp{
+            width: 50px;
+            height: 50px;
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .icon-whatsapp{
+        bottom: 10px;
+        right: 1px;
+    }
+}

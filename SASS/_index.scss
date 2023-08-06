@@ -84,30 +84,7 @@
     
     /*titulos propiedades index*/
     
-    .h2_prop{
-        font-size: $size-titulos;
-        font-family: $letra-titulos;
-    }
-    
-    .h2_prop{
-        font-family: $letra-titulos;
-    }
-    
-    /*tarjetas propiedades*/
-    
-    .div_prop{
-        @include size(350px, 500px);
-    
-        .propiedad1{
-            object-fit: cover;
-        }
-    
-        /*boton en propiedades*/
-        .reservar{
-            @extend .boton_con_animacion;
-            border: 2px solid gray;
-          }
-        }
+   
     
     
     
@@ -208,7 +185,6 @@
     }
    
 }
-
 @media only screen and (max-width: 600px){
     .main-index{
         .div_imagen{
